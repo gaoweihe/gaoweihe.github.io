@@ -1,0 +1,25 @@
+---
+layout: page
+title: GAO WEIHE
+tagline: Postgraduate student at Tsinghua University
+---
+{% include JB/setup %}
+
+<div>
+<div>
+<img align="left" src="assets/index/photo_gaoweihe.jpg" width="80px;" />
+
+I study Computer Science at Tsinghua University until 2024 summer. My research interests focus on Distributed Systems, High Performance Computing and system aspects of Blockchains. I am currently open to Ph.D. programs outside China and internship positions in Beijing.  
+
+</div>
+
+
+## Education 
+- BSc of Computer Science, Beijing Jiaotong University (CN), 2021
+- BSc of Computer Science, Honors degree, Lancaster University (UK), 2021 
+- MSc of Computer Science, Tsinghua University (CN), expected 2024
+
+## Contact 
+- Email: gao.weihe@outlook.com
+- Timezone: UTC+8
+- Address: East main building 9-407, Tsinghua University (100084), Beijing, P. R. China 
