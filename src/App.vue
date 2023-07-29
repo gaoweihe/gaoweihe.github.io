@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <!-- <img alt="Portfolio Photo" class="photo" src="@/assets/photo_gaoweihe.jpg" width="250" height="250" />
+    <!-- <img alt="Portfolio Photo" class="photo" src="@/assets/logo.svg" width="250" height="250" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -17,6 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+  <el-backtop :right="100" :bottom="100" />
 </template>
 
 <style scoped>
