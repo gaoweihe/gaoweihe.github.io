@@ -19,7 +19,7 @@ permalink: /
     <li>BSc in Computer Science, Beijing Jiaotong University, CN (2017-2021)</li>
 </ul>
 
-<p align="justify">Graduating in summer 2024 as a Master's student in Computer Science, my interests focus on <b>Distributed Systems</b> and <b>HPC</b>. I used to research on DS architectures with papers regarding <i>Distributed IoT Systems</i> and <i>Blockchain Scalability</i>. Seeking CS Ph.D. opportunities starting in 2025. </p>
+<p align="justify">Graduating in summer 2024 as a master's student in Computer Science, my interests focus on <b>Distributed Systems</b> and <b>HPC</b>. I used to research on DS architectures with papers regarding <i>Distributed IoT Systems</i> and <i>Blockchain Scalability</i>. Seeking CS Ph.D. opportunities starting in 2025. </p>
 
 Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">email</a>! 
 
