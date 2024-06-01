@@ -6,4 +6,31 @@ sitemap: false
 permalink: /
 ---
 
-Me. 
+<div class="row">
+<div class="col-sm-4 clearfix">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/portrait-lt.jpg" class="img-responsive" width="100%" style="float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 0px; box-shadow: 2px 2px 5px #888888" />
+</div>
+<div class="col-sm-8 clearfix">
+<h3>GAO Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
+<i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/">Tsinghua CS</a>. </i> <br> 
+<ul style="overflow: hidden">
+    <li>MSc in Computer Science, Tsinghua University, CN (2021-)</li>
+    <li>BSc in Computer Science, Lancaster University, UK (2017-2021)</li>
+    <li>BSc in Computer Science, Beijing Jiaotong University, CN (2017-2021)</li>
+</ul>
+
+<p align="justify">Graduating in summer 2024 as a Master's student in Computer Science, my interests focus on <b>Distributed Systems</b> and <b>HPC</b>. I used to research on DS architectures with papers regarding <i>Distributed IoT Systems</i> and <i>Blockchain Scalability</i>. Seeking CS Ph.D. opportunities starting in 2025. </p>
+
+Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">email</a>! 
+
+<p>CV (en-uk | zh-cn) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a></p> 
+
+</div>
+</div>
+
+<h3>Research Topics</h3>
+
+<h3>Publications</h3>
+
+<h3>Patents</h3>
+
