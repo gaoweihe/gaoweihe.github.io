@@ -29,8 +29,31 @@ Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">e
 </div>
 
 <h3>Research Topics</h3>
+<ul>
+<li>Blockchains Scalability with Trustless Delegation</li>
+<li>Revertible Smart Contract Relay</li>
+<li>TEE Concurrency Control Performance</li>
+</ul>
 
 <h3>Publications</h3>
+<ul>
+<li>DChain: Scaling Blockchains through Trust-Minimized Computing Delegation</li>
+<li>Image-based Deflection Measurement and Error Analysis</li>
+<li>Modelling and Implementation of Distributed Rain Water Storage and Utilization</li>
+</ul>
 
 <h3>Patents</h3>
+<ul>
+<li>A Device for Personnel Detection in an Intelligent Home Privacy Space. CN211928697U,2020-11-13.</li>
+<li>Signal Acquisition and Output Circuit and Device. CN210721074U,2020-06-09.</li>
+<li>Communication Conversion Circuit and Conversion Device. CN210225447U,2020-03-31.</li>
+<li>An Image Analysis-Based Spot Position Detection Sensor. CN209432081U,2019-09-24.</li>
+</ul>
 
+<h3>Projects</h3>
+<ul>
+<li>Internet-Based Open Integrated Utility Tunnel Information Exchange and Decision Support System</li>
+<li>Research on Key Technologies and Application Systems of Internet Plus Micro-circulation Mode Sponge City</li>
+<li>Integration and Demonstration of Key Technologies for Green Prefabricated Steel Structural Buildings</li>
+<li>Geological Disaster Data Visualization and Dynamic Display of Disaster Formation Process Based on WebGL Technology</li>
+</ul>
