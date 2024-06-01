@@ -23,7 +23,7 @@ permalink: /
 
 Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">email</a>! 
 
-<p>CV (en-uk | zh-cn) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a></p> 
+<p>CV (<a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf" target="_blank">en-uk</a> | <a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf" target="_blank">zh-cn</a>) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a></p> 
 
 </div>
 </div>
