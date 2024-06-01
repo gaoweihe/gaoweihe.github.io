@@ -11,7 +11,7 @@ email: gao.weihe@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to homepage of GAO Weihe. 
 baseurl: ""
-url: ""
+url: "gaoweihe.github.io"
 
 include:
   - .htaccess
