@@ -7,10 +7,10 @@ permalink: /
 ---
 
 <div class="row">
-<div class="col-sm-4 clearfix">
+<div class="col-sm-3 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/portrait-lt.jpg" class="img-responsive" width="100%" style="float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 0px; box-shadow: 2px 2px 5px #888888" />
 </div>
-<div class="col-sm-8 clearfix">
+<div class="col-sm-9 clearfix">
 <h3>GAO Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
 <i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/">Tsinghua CS</a>. </i> <br> 
 <ul style="overflow: hidden">
