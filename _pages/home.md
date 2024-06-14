@@ -6,6 +6,11 @@ sitemap: false
 permalink: /
 ---
 
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- Calendly link widget end -->
+
 <div class="row">
 <div class="col-sm-3 clearfix">
   <img src="{{ site.url }}{{ site.baseurl }}/images/portrait-lt.jpg" class="img-responsive" width="100%" style="float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 0px; box-shadow: 2px 2px 5px #888888" />
@@ -23,7 +28,7 @@ permalink: /
 
 Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">email</a>! 
 
-<p>CV (<a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf" target="_blank">en-uk</a> | <a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf" target="_blank">zh-cn</a>) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a></p> 
+<p>CV (<a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf" target="_blank">en-uk</a> | <a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf" target="_blank">zh-cn</a>) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a> - <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gaoweihe?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Calendly</a></p> 
 
 </div>
 </div>
