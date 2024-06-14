@@ -33,22 +33,6 @@ Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">e
 </div>
 </div>
 
-<script src="https://giscus.app/client.js"
-        data-repo="gaoweihe/gaoweihe.github.io"
-        data-repo-id="R_kgDOIgHlWg"
-        data-category="General"
-        data-category-id="DIC_kwDOIgHlWs4CgFP1"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
-
 <h3>Research Topics</h3>
 <ul>
 <li>Blockchains Scalability with Trustless Delegation</li>
