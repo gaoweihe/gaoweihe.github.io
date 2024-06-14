@@ -33,14 +33,6 @@ Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">e
 </div>
 </div>
 
-<script src="https://utteranc.es/client.js"
-  repo="gaoweihe/gaoweihe.github.io"
-  issue-term="pathname"
-  theme="github-light"
-  crossorigin="anonymous"
-  async>
-</script>
-
 <h3>Research Topics</h3>
 <ul>
 <li>Blockchains Scalability with Trustless Delegation</li>
