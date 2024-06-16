@@ -17,7 +17,7 @@ permalink: /
 </div>
 <div class="col-sm-9 clearfix">
 <h3>GAO Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
-<i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/">Tsinghua CS</a>. </i> <br> 
+<i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/"  target="_blank">Tsinghua CS</a>. </i> <br> 
 <ul style="overflow: hidden">
     <li>MSc in Computer Science, Tsinghua University, CN (2021-)</li>
     <li>BSc in Computer Science, Lancaster University, UK (2017-2021)</li>
