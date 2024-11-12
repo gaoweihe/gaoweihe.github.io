@@ -1,7 +1,7 @@
 ---
-title: "GAO Weihe - Home"
+title: "Gao, Weihe | About Me"
 layout: homelay
-excerpt: "GAO Weihe at Tsinghua CS"
+excerpt: "Gao, Weihe at Tsinghua CS"
 sitemap: false
 permalink: /
 ---
@@ -16,7 +16,7 @@ permalink: /
   <img src="{{ site.url }}{{ site.baseurl }}/images/portrait-lt.jpg" class="img-responsive" width="100%" style="float: left; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 0px; box-shadow: 2px 2px 5px #888888" />
 </div>
 <div class="col-sm-9 clearfix">
-<h3>GAO Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
+<h3>Gao, Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
 <i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/"  target="_blank">Tsinghua CS</a>. </i> <br> 
 <ul style="overflow: hidden">
     <li>MSc in Computer Science, Tsinghua University, CN (2021-)</li>
@@ -26,7 +26,7 @@ permalink: /
 
 <p align="justify">Graduating in summer 2024 as a master's student in Computer Science, my interests focus on <b>Distributed Systems</b> and <b>HPC</b>. I used to research on DS architectures with papers regarding <i>Distributed IoT Systems</i> and <i>Blockchain Scalability</i>. Seeking CS Ph.D. opportunities starting in 2025. </p>
 
-Wanna chat? Shoot me an <a href="mailto:gao.weihe@outlook.com" target="_blank">email</a>! 
+Wanna chat? Shoot me an <a href="mailto:nickwgao@gmail.com" target="_blank">email</a>! 
 
 <p>CV (<a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf" target="_blank">en-uk</a> | <a href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf" target="_blank">zh-cn</a>) - <a href="https://github.com/gaoweihe" target="_blank">GitHub</a> - <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank">LinkedIn</a> - <a href="https://orcid.org/0000-0002-3881-7388" target="_blank">ORCiD</a> - <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/gaoweihe?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Calendly</a></p> 
 
