@@ -6,6 +6,7 @@ sitemap: false
 permalink: /
 ---
 
+
 <!-- Calendly link widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
@@ -17,14 +18,15 @@ permalink: /
 </div>
 <div class="col-sm-9 clearfix">
 <h3>Gao, Weihe (<span title="Named after the chubby fox from Zootopia!">Nick</span>)</h3>
-<i>Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/"  target="_blank">Tsinghua CS</a>. </i> <br> 
+
+Master's student in Computer Science at <a href="https://www.cs.tsinghua.edu.cn/csen/"  target="_blank">Tsinghua CS</a>. <i>Open to 2025 Fall Ph.D. opportunities.</i><br> 
 <ul style="overflow: hidden">
     <li>MSc in Computer Science, Tsinghua University, CN (2021-)</li>
     <li>BSc in Computer Science, Lancaster University, UK (2017-2021)</li>
     <li>BSc in Computer Science, Beijing Jiaotong University, CN (2017-2021)</li>
 </ul>
 
-<p align="justify">Graduating in summer 2024 as a master's student in Computer Science, my interests focus on <b>Distributed Systems</b> and <b>HPC</b>. I used to research on DS architectures with papers regarding <i>Distributed IoT Systems</i> and <i>Blockchain Scalability</i>. Seeking CS Ph.D. opportunities starting in 2025. </p>
+<p align="justify">My research interests lie in anything around <b>Computer Systems</b>, where I've explored many <a href="/research">sub-areas</a>.</p>
 
 Wanna chat? Shoot me an <a href="mailto:nickwgao@gmail.com" target="_blank">email</a>! 
 
@@ -62,3 +64,4 @@ Wanna chat? Shoot me an <a href="mailto:nickwgao@gmail.com" target="_blank">emai
 <li>Integration and Demonstration of Key Technologies for Green Prefabricated Steel Structural Buildings</li>
 <li>Geological Disaster Data Visualization and Dynamic Display of Disaster Formation Process Based on WebGL Technology</li>
 </ul>
+
