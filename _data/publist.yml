@@ -1,9 +1,27 @@
 
-- title: "Title"
-  image: image.png
-  description: Description.
-  authors: Name Surname
+- title: "Image-based Deflection Measurement and Error Analysis"
+  image: deflection-1.png
+  description: Movement measurement based on lasers. 
+  authors: Bingyi Hu, **Weihe Gao**, Cuiping Yan, Yongjun Ni, Chenqian Li
   link:
-    url: https://url.org
-    display: UrlDescription
+    url: https://iopscience.iop.org/article/10.1088/1742-6596/1626/1/012024/meta
+    display: Access
   highlight: 1
+
+- title: "Modelling and Implementation of Distributed Rain Water Storage and Utilization"
+  image: water-1.jpg
+  description: Environmental modeling and distributed control. 
+  authors: Bingyi Hu, Ke Xing, **Weihe Gao**, Hainan Liu, Hengyong Li
+  link:
+    url: https://iopscience.iop.org/article/10.1088/1742-6596/1624/2/022004/meta
+    display: Access
+  highlight: 1
+
+- title: "LogOnline: A Semi-Supervised Log-Based Anomaly Detector Aided with Online Learning Mechanism"
+  image: dummy.jpg
+  description: Log-based anomaly detection. 
+  authors: Xuheng Wang, Jiaxing Song, Xu Zhang, Junshu Tang, **Weihe Gao**, Qingwei Lin
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/10298477
+    display: Access
+  highlight: 0
