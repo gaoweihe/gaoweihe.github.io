@@ -27,10 +27,10 @@ My wife <a href="https://shiqi-yu.github.io/" target="_blank">Charlotte</a> work
 
 <el-popover
   placement="top-start"
-  popper-class="dog-definition-popover"
+  popper-class="dog-popover"
   trigger="click"
 >
-<el-card shadow="never">
+<el-card class="dog-card" shadow="never">
   <span style="font-family: 'Courier New', Courier, monospace; font-size: x-large; font-weight: bold;">dog</span><br />
   <span style="font-family: 'Courier New', Courier, monospace; font-size: medium;">[dawwg]</span>
   <span style="font-family: 'Courier New', Courier, monospace; font-size: medium; font-weight: bold;">noun</span><br /><br />
@@ -38,13 +38,3 @@ My wife <a href="https://shiqi-yu.github.io/" target="_blank">Charlotte</a> work
 </el-card>
   <a slot="reference" @click="OnDogsClicked" style="cursor: pointer;">dogs</a></el-popover
 ><span> as well.</span>
-
-<style>
-  .el-card {
-    padding: 10px;
-    margin: 0%;
-    border: none;
-    width: 300px;
-    height: 300px;
-  }
-</style>
