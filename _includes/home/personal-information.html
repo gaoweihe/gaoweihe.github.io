@@ -22,7 +22,7 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <a href="" target="_blank" class="side-icons">Boston, MA</a>
+                <a href="" target="_blank" class="side-icons side-icons-texts">Boston, MA</a>
             </el-col>
         </el-row>
 
@@ -35,7 +35,7 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <a href="mailto:nickwgao@gmail.com" target="_blank" class="side-icons">nickwgao@gmail.com</a>
+                <a href="mailto:nickwgao@gmail.com" target="_blank" class="side-icons side-icons-texts">nickwgao@gmail.com</a>
             </el-col>
         </el-row>
 
@@ -47,7 +47,7 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <el-popover placement="right" title="Click down below for my CV" width="300" trigger="hover" content="">
+                <el-popover placement="right" title="Click down below for my CV" width="300" trigger="click" content="">
                     <el-card class="box-card">
                         <el-link type="primary" style="font-size: 18px"
                             href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
@@ -55,7 +55,7 @@
                     <el-card class="box-card"><el-link type="primary" style="font-size: 18px"
                             href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf"
                             target="_blank">zh-cn</el-link></el-card>
-                    <span slot="reference" style="cursor: pointer;" class="side-icons">Curriculum Vitae</span>
+                    <span slot="reference" style="cursor: pointer;" class="side-icons side-icons-texts">Curriculum Vitae</span>
                 </el-popover>
             </el-col>
         </el-row>
@@ -68,14 +68,14 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <el-popover placement="right" title="Click down below for my public keys" width="300" trigger="hover"
+                <el-popover placement="right" title="Click down below for my public keys" width="300" trigger="click"
                     content="">
                     <el-card class="box-card">
                         <el-link type="primary" style="font-size: 18px" href="https://github.com/gaoweihe.keys"
                             target="_blank">ssh-ed25519</el-link></el-card>
                     <el-card class="box-card"><el-link type="primary" style="font-size: 18px" href=""
                             target="_blank">gpg</el-link></el-card>
-                    <span slot="reference" style="cursor: pointer;" class="side-icons">SSH | GPG</span>
+                    <span slot="reference" style="cursor: pointer;" class="side-icons side-icons-texts">SSH | GPG Public Keys</span>
                 </el-popover>
             </el-col>
         </el-row>
@@ -89,7 +89,7 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <a href="https://github.com/gaoweihe" target="_blank" class="side-icons">@gaoweihe</a>
+                <a href="https://github.com/gaoweihe" target="_blank" class="side-icons side-icons-texts">@gaoweihe</a>
             </el-col>
         </el-row>
 
@@ -103,7 +103,7 @@
             </el-col>
             <el-col :span="16">
                 <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank"
-                    class="side-icons">@gaoweihe</a>
+                    class="side-icons side-icons-texts">@gaoweihe</a>
             </el-col>
         </el-row>
     </el-collapse-item>
@@ -117,7 +117,7 @@
             </el-col>
             <el-col :span="16">
                 <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"
-                    class="side-icons">0000-0002-3881-7388</a>
+                    class="side-icons side-icons-texts">0000-0002-3881-7388</a>
             </el-col>
         </el-row>
 
@@ -131,7 +131,7 @@
             </el-col>
             <el-col :span="16">
                 <a href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en" target="_blank"
-                    class="side-icons">WryZ9ywAAAAJ</a>
+                    class="side-icons side-icons-texts">WryZ9ywAAAAJ</a>
             </el-col>
         </el-row>
 
@@ -144,10 +144,8 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <a href="https://x.com/nickwgao" target="_blank" class="side-icons">@nickwgao</a>
+                <a href="https://x.com/nickwgao" target="_blank" class="side-icons side-icons-texts">@nickwgao</a>
             </el-col>
         </el-row>
     </el-collapse-item>
 </el-collapse>
-
-<hr />
