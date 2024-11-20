@@ -122,8 +122,8 @@ firstp {}
 	position: relative;
 	width: 100%;
 	height: auto;
-	mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.0) 100%);
-	-webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.0) 100%);
+	mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0.1) 100%);
+	-webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 0.1) 100%);
 	mask-composite: exclude;
 	-webkit-mask-composite: destination-in;
 	margin-top: 0px;
