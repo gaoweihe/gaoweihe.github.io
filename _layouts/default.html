@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly link widget end -->
 
-    {% include header.html %}
+  {% include header.html %}
 
+  <div id="element-ui-app">
     <div class="container-fluid">
-      <div class="row">
         {{ content }}
-      </div>
     </div>
+  </div>
 
-    <script>
-      new Vue({
-        el: '#element-ui-app',
-        data() {
-          return {
-            message: 'Hello Element UI!'
-          };
-        }
-      });
-    </script>    
+  <script>
+    new Vue({
+      el: '#element-ui-app',
+      data() {
+        return {
+          message: 'Hello World!'
+        };
+      }
+    });
+  </script>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
 
 </html>

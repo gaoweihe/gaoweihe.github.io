@@ -1,0 +1,151 @@
+<el-row><el-popover placement="top-start" title="N. P. Wilde" width="300" trigger="click"
+        content="Named after the chubby fox from Zootopia!">
+        <p>Named after the chubby fox from Zootopia!</p>
+        <img src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp" class="img-responsive" width="100%" style="
+      float: left;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+      box-shadow: 2px 2px 5px #888888;
+    " />
+        <h3 slot="reference" style="text-align: center; margin-top: 0px;">Gao, Weihe (Nick)</h3>
+    </el-popover>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="" target="_blank"><span class="fa-solid fa-location-dot fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="" target="_blank" class="side-icons">Boston, MA</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="mailto:nickwgao@gmail.com" target="_blank"><span class="fa-regular fa-envelope fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="mailto:nickwgao@gmail.com" target="_blank" class="side-icons">nickwgao@gmail.com</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="" target="_blank"><span class="fa-regular fa-file fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <el-popover placement="right" title="Click down below for my CV" width="300" trigger="hover" content="">
+            <el-card class="box-card">
+                <el-link type="primary" style="font-size: 18px"
+                    href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
+                    target="_blank">en-uk</el-link></el-card>
+            <el-card class="box-card"><el-link type="primary" style="font-size: 18px"
+                    href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf"
+                    target="_blank">zh-cn</el-link></el-card>
+            <span slot="reference" style="cursor: pointer;" class="side-icons">Curriculum Vitae</span>
+        </el-popover>
+    </el-col>
+</el-row>
+
+<hr />
+
+<p>Professional</p>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="https://github.com/gaoweihe" target="_blank"><span class="fa-brands fa-github fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="https://github.com/gaoweihe" target="_blank" class="side-icons">@gaoweihe</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank"><span
+                    class="fa-brands fa-linkedin-in fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank" class="side-icons">@gaoweihe</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="" target="_blank"><span class="fa-solid fa-key fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <el-popover placement="right" title="Click down below for my public keys" width="300" trigger="hover"
+            content="">
+            <el-card class="box-card">
+                <el-link type="primary" style="font-size: 18px" href="https://github.com/gaoweihe.keys"
+                    target="_blank">ssh-ed25519</el-link></el-card>
+            <el-card class="box-card"><el-link type="primary" style="font-size: 18px" href=""
+                    target="_blank">gpg</el-link></el-card>
+            <span slot="reference" style="cursor: pointer;" class="side-icons">SSH | GPG</span>
+        </el-popover>
+    </el-col>
+</el-row>
+
+<hr />
+
+<p>Academic</p>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"><span
+                    class="fa-brands fa-orcid fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="https://orcid.org/0000-0002-3881-7388" target="_blank" class="side-icons">0000-0002-3881-7388</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en" target="_blank"><span
+                    class="fa-brands fa-google-scholar fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en" target="_blank"
+            class="side-icons">WryZ9ywAAAAJ</a>
+    </el-col>
+</el-row>
+
+<el-row type="flex" align="middle">
+    <el-col :span="1"></el-col>
+    <el-col :span="5">
+        <div style="text-align: center">
+            <a href="https://x.com/nickwgao" target="_blank"><span class="fa-brands fa-x-twitter fa-lg"></span></a>
+        </div>
+    </el-col>
+    <el-col :span="16">
+        <a href="https://x.com/nickwgao" target="_blank" class="side-icons">@nickwgao</a>
+    </el-col>
+</el-row>

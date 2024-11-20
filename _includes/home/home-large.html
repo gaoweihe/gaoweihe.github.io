@@ -1,0 +1,15 @@
+<el-row>
+  {% include home/banner-portrait.html %}
+</el-row>
+
+<el-row :gutter="32">
+
+  <el-col :span="6">
+    {% include home/personal-information.html %}
+  </el-col>
+
+  <el-col :span="18">
+    {% include home/biography.html %}
+  </el-col>
+
+</el-row>
