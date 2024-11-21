@@ -22,12 +22,14 @@
     </div>
 
     <script>
+      ELEMENT.locale(ELEMENT.lang.en)
       new Vue({
         el: "#element-ui-app",
         data() {
           return {
             activeNames: ["1"],
-            projects_active_names: ["1"],
+            projects_active_names: ["1"], 
+            travelogue_active_names: ["1", "2"],
           };
         },
         methods: {
