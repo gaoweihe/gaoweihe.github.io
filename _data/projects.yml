@@ -1,0 +1,26 @@
+topics: 
+- name: Real-time Sensor Networks
+  projects: 
+  - title: Internet-Based Open Integrated Utility Tunnel Information Exchange and Decision Support System
+    image: deflection-1.png
+    description: UUT. 
+- name: Industrial Internet-of-Things
+  projects: 
+  - title: Research on Key Technologies and Application Systems of Internet Plus Micro-circulation Mode Sponge City
+    image: deflection-1.png
+    description: UUT. 
+- name: Consensus and Protocols
+  projects: 
+  - title: "DChain: Scaling Blockchains through Trust-Minimized Computing Delegation"
+    image: deflection-1.png
+    description: UUT. 
+- name: Security and Privacy
+  projects: 
+  - title: Secure RPC
+    image: deflection-1.png
+    description: UUT. 
+- name: Scheduling and Predictability
+  projects: 
+  - title: Predictable LLM Serving API
+    image: deflection-1.png
+    description: UUT. 

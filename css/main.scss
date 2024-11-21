@@ -33,11 +33,6 @@ p.byline {
 	margin-bottom: 48px;
 }
 
-
-pubtit {
-	font-weight: bold;
-}
-
 firstp {}
 
 .container-fluid {
@@ -179,4 +174,19 @@ firstp {}
 
 .el-collapse .side-icons-texts {
     font-size: 14px !important; /* Set your desired font size */
+}
+
+.pub-title-textbox {
+    display: flex;
+    align-items: flex-start;     /* Vertically center the content */
+    justify-content: center; /* Optional: Center text horizontally */
+    line-height: 1.5;        /* Defines single-line height */
+    height: 3em;             /* Fixed two-line height */
+    text-align: center;      /* Optional: Align text in the center */
+    box-sizing: border-box;  /* Includes padding in height calculations */
+	font-weight: bold;
+}
+
+.proj-title-textbox {
+	font-weight: bold;
 }

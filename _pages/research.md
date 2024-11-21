@@ -6,7 +6,9 @@ sitemap: false
 permalink: /research/
 ---
 
-# Highlights
+### Highlights
+
+Want to see more details of my past projects? Click <a href="/projects">here</a>! 
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -20,7 +22,7 @@ permalink: /research/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <pubtit><span class="pub-title-textbox">{{ publi.title }}</span></pubtit>
+  <span class="pub-title-textbox">{{ publi.title }}</span>
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="100%" style="float: left" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
@@ -47,7 +49,7 @@ permalink: /research/
 <p> &nbsp; </p>
 
 
-## Patents
+### Patents
 {% for pat in site.data.patlist %}
 
   {{ pat.title }} <br />
@@ -56,7 +58,7 @@ permalink: /research/
 {% endfor %}
 
 
-## Publications
+### Publications
 
 {% for publi in site.data.publist %}
 
@@ -64,16 +66,3 @@ permalink: /research/
   <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
 {% endfor %}
-
-<style>
-.pub-title-textbox {
-      display: flex;
-    align-items: flex-start;     /* Vertically center the content */
-    justify-content: center; /* Optional: Center text horizontally */
-    line-height: 1.5;        /* Defines single-line height */
-    height: 3em;             /* Fixed two-line height */
-    text-align: center;      /* Optional: Align text in the center */
-
-    box-sizing: border-box;  /* Includes padding in height calculations */
-}
-</style>
