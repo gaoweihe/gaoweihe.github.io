@@ -22,11 +22,10 @@
     </div>
 
     <script>
-      ELEMENT.locale(ELEMENT.lang.en)
-      new Vue({
-        el: "#element-ui-app",
+      const App = {
         data() {
           return {
+            is_visible_npwilde: false,
             activeNames: ["1"],
             projects_active_names: ["1"], 
             travelogue_active_names: ["1", "2"],
@@ -41,7 +40,12 @@
             ctx.stroke();
           },
         },
+      };
+      const app = Vue.createApp(App);
+      app.use(ElementPlus, {
+
       });
+      app.mount("#element-ui-app");
     </script>
 
     {% include footer.html %}

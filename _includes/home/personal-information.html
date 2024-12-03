@@ -1,151 +1,255 @@
-<el-row><el-popover placement="top-start" title="N. P. Wilde" width="300" trigger="click"
-        content="Named after the chubby fox from Zootopia!">
-        <p>Named after the chubby fox from Zootopia!</p>
-        <img src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp" class="img-responsive" width="100%" style="
-      float: left;
-      margin-top: 20px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      margin-left: 0px;
-      box-shadow: 2px 2px 5px #888888;
-    " />
-        <h3 slot="reference" style="text-align: center; margin-top: 0px;">Gao, Weihe (Nick)</h3>
-    </el-popover>
+<el-row>
+  <h3
+    style="text-align: center; margin-top: 0px"
+    @click="is_visible_npwilde = !is_visible_npwilde"
+  >
+    Gao, Weihe (Nick)
+  </h3>
+  <el-popover
+    v-model:visible="is_visible_npwilde"
+    placement="bottom"
+    title="N. P. Wilde"
+    width="300"
+    trigger="click"
+    content="Named after the chubby fox from Zootopia!"
+    hide-on-blur
+  >
+    <p>Named after the chubby fox from Zootopia!</p>
+    <el-image
+      v-if="is_visible_npwilde"
+      src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp"
+    ></el-image>
+  </el-popover>
 </el-row>
 
 <el-collapse v-model="activeNames">
-    <el-collapse-item title="Basics" name="1"><el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="" target="_blank"><span class="fa-solid fa-location-dot fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="" target="_blank" class="side-icons side-icons-texts">Boston, MA</a>
-            </el-col>
-        </el-row>
+  <el-collapse-item title="Basics" name="1"
+    ><el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="" target="_blank"
+            ><span class="fa-solid fa-location-dot fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a href="" target="_blank" class="side-icons side-icons-texts"
+          >Boston, MA</a
+        >
+      </el-col>
+    </el-row>
 
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="mailto:nickwgao@gmail.com" target="_blank"><span
-                            class="fa-regular fa-envelope fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="mailto:nickwgao@gmail.com" target="_blank" class="side-icons side-icons-texts">nickwgao@gmail.com</a>
-            </el-col>
-        </el-row>
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="mailto:nickwgao@gmail.com" target="_blank"
+            ><span class="fa-regular fa-envelope fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="mailto:nickwgao@gmail.com"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >nickwgao@gmail.com</a
+        >
+      </el-col>
+    </el-row>
 
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="" target="_blank"><span class="fa-regular fa-file fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <el-popover placement="right" title="Click down below for my CV" width="300" trigger="click" content="">
-                    <el-card class="box-card">
-                        <el-link type="primary" style="font-size: 18px"
-                            href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
-                            target="_blank">en-uk</el-link></el-card>
-                    <el-card class="box-card"><el-link type="primary" style="font-size: 18px"
-                            href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf"
-                            target="_blank">zh-cn</el-link></el-card>
-                    <span slot="reference" style="cursor: pointer;" class="side-icons side-icons-texts">Curriculum Vitae</span>
-                </el-popover>
-            </el-col>
-        </el-row>
-        
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="" target="_blank"><span class="fa-solid fa-key fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <el-popover placement="right" title="Click down below for my public keys" width="300" trigger="click"
-                    content="">
-                    <el-card class="box-card">
-                        <el-link type="primary" style="font-size: 18px" href="https://github.com/gaoweihe.keys"
-                            target="_blank">ssh-ed25519</el-link></el-card>
-                    <el-card class="box-card"><el-link type="primary" style="font-size: 18px" href=""
-                            target="_blank">gpg</el-link></el-card>
-                    <span slot="reference" style="cursor: pointer;" class="side-icons side-icons-texts">SSH<el-divider direction="vertical"></el-divider>GPG</span>
-                </el-popover>
-            </el-col>
-        </el-row>
-    </el-collapse-item>
-    <el-collapse-item title="Professional" name="2"><el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="https://github.com/gaoweihe" target="_blank"><span
-                            class="fa-brands fa-github fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="https://github.com/gaoweihe" target="_blank" class="side-icons side-icons-texts">@gaoweihe</a>
-            </el-col>
-        </el-row>
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="" target="_blank"
+            ><span class="fa-regular fa-file fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <el-popover
+          placement="right"
+          title="Click down below for my CV"
+          width="300"
+          trigger="click"
+          content=""
+        >
+          <template #default>
+            <el-card class="box-card">
+              <el-link
+                type="primary"
+                style="font-size: 18px"
+                href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
+                target="_blank"
+                >en-uk</el-link
+              ></el-card
+            >
+            <el-card class="box-card"
+              ><el-link
+                type="primary"
+                style="font-size: 18px"
+                href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf"
+                target="_blank"
+                >zh-cn</el-link
+              ></el-card
+            >
+          </template>
+          <template #reference>
+            <span style="cursor: pointer" class="side-icons side-icons-texts"
+              >Curriculum Vitae</span
+            >
+          </template>
+        </el-popover>
+      </el-col>
+    </el-row>
 
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank"><span
-                            class="fa-brands fa-linkedin-in fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="https://www.linkedin.com/in/weihe-gao-600a1712b/" target="_blank"
-                    class="side-icons side-icons-texts">@gaoweihe</a>
-            </el-col>
-        </el-row>
-    </el-collapse-item>
-    <el-collapse-item title="Academic" name="3"><el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"><span
-                            class="fa-brands fa-orcid fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"
-                    class="side-icons side-icons-texts">0000-0002-3881-7388</a>
-            </el-col>
-        </el-row>
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="" target="_blank"
+            ><span class="fa-solid fa-key fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <el-popover
+          placement="right"
+          title="Click down below for my public keys"
+          width="300"
+          trigger="click"
+          content=""
+        >
+          <template #default>
+            <el-card class="box-card">
+              <el-link
+                type="primary"
+                style="font-size: 18px"
+                href="https://github.com/gaoweihe.keys"
+                target="_blank"
+                >ssh-ed25519</el-link
+              ></el-card
+            >
+            <el-card class="box-card"
+              ><el-link
+                type="primary"
+                style="font-size: 18px"
+                href=""
+                target="_blank"
+                >gpg</el-link
+              ></el-card
+            >
+          </template>
+          <template #reference>
+            <span style="cursor: pointer" class="side-icons side-icons-texts"
+              >SSH<el-divider direction="vertical"></el-divider>GPG</span
+            >
+          </template>
+        </el-popover>
+      </el-col>
+    </el-row>
+  </el-collapse-item>
+  <el-collapse-item title="Professional" name="2"
+    ><el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="https://github.com/gaoweihe" target="_blank"
+            ><span class="fa-brands fa-github fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="https://github.com/gaoweihe"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >@gaoweihe</a
+        >
+      </el-col>
+    </el-row>
 
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en" target="_blank"><span
-                            class="fa-brands fa-google-scholar fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en" target="_blank"
-                    class="side-icons side-icons-texts">WryZ9ywAAAAJ</a>
-            </el-col>
-        </el-row>
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a
+            href="https://www.linkedin.com/in/weihe-gao-600a1712b/"
+            target="_blank"
+            ><span class="fa-brands fa-linkedin-in fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="https://www.linkedin.com/in/weihe-gao-600a1712b/"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >@gaoweihe</a
+        >
+      </el-col>
+    </el-row>
+  </el-collapse-item>
+  <el-collapse-item title="Academic" name="3"
+    ><el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"
+            ><span class="fa-brands fa-orcid fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="https://orcid.org/0000-0002-3881-7388"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >0000-0002-3881-7388</a
+        >
+      </el-col>
+    </el-row>
 
-        <el-row type="flex" align="middle">
-            <el-col :span="1"></el-col>
-            <el-col :span="5">
-                <div style="text-align: center">
-                    <a href="https://x.com/nickwgao" target="_blank"><span
-                            class="fa-brands fa-x-twitter fa-lg"></span></a>
-                </div>
-            </el-col>
-            <el-col :span="16">
-                <a href="https://x.com/nickwgao" target="_blank" class="side-icons side-icons-texts">@nickwgao</a>
-            </el-col>
-        </el-row>
-    </el-collapse-item>
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a
+            href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en"
+            target="_blank"
+            ><span class="fa-brands fa-google-scholar fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >WryZ9ywAAAAJ</a
+        >
+      </el-col>
+    </el-row>
+
+    <el-row type="flex" align="middle">
+      <el-col :span="1"></el-col>
+      <el-col :span="5">
+        <div style="text-align: center">
+          <a href="https://x.com/nickwgao" target="_blank"
+            ><span class="fa-brands fa-x-twitter fa-lg"></span
+          ></a>
+        </div>
+      </el-col>
+      <el-col :span="16">
+        <a
+          href="https://x.com/nickwgao"
+          target="_blank"
+          class="side-icons side-icons-texts"
+          >@nickwgao</a
+        >
+      </el-col>
+    </el-row>
+  </el-collapse-item>
 </el-collapse>

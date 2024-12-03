@@ -23,18 +23,51 @@ Wanna chat? Shoot me an
 </ul>
 
 <h4>Beyond Academia</h4>
-My wife <a href="https://shiqi-yu.github.io/" target="_blank">Charlotte</a> works on Extended Reality and Human-Computer Interaction at Northeastern University. Both of us are passionate adventurers, and big fans of
+My wife
+<a href="https://shiqi-yu.github.io/" target="_blank">Charlotte</a> works on
+Extended Reality and Human-Computer Interaction at Northeastern University. Both
+of us are passionate adventurers, and big fans of
 
-<el-popover
-  placement="top-start"
-  popper-class="dog-popover"
-  trigger="click"
->
-<el-card class="dog-card" shadow="never">
-  <span style="font-family: 'Courier New', Courier, monospace; font-size: x-large; font-weight: bold;">dog</span><br />
-  <span style="font-family: 'Courier New', Courier, monospace; font-size: medium;">[dawwg]</span>
-  <span style="font-family: 'Courier New', Courier, monospace; font-size: medium; font-weight: bold;">noun</span><br /><br />
-  <span style="font-family: 'Courier New', Courier, monospace; font-size: medium;">the most loyal and loving<br />friend you will ever have.<br />quickly becomes everyone's<br />favorite family member.</span>
-</el-card>
-  <a slot="reference" @click="OnDogsClicked" style="cursor: pointer;">dogs</a></el-popover
+<el-popover placement="top-start" popper-class="dog-popover" trigger="click" width="324px">
+  <template #default>
+    <el-card class="dog-card" shadow="never">
+      <span
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          font-size: x-large;
+          font-weight: bold;
+        "
+        >dog</span
+      ><br />
+      <span
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          font-size: medium;
+        "
+        >[dawwg]</span
+      >
+      <span>&nbsp;&nbsp;</span>
+      <span
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          font-size: medium;
+          font-weight: bold;
+        "
+        >noun</span
+      ><br /><br />
+      <span
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          font-size: medium;
+        "
+        >the most loyal and loving<br />friend you will ever have.<br />quickly
+        becomes everyone's<br />favorite family member.</span
+      >
+    </el-card>
+  </template>
+  <template #reference>
+    <a slot="reference" @click="OnDogsClicked" style="cursor: pointer"
+      >dogs</a
+    ></template
+  ></el-popover
 ><span> as well.</span>
