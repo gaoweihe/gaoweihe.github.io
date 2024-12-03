@@ -22,29 +22,34 @@
     </div>
 
     <script>
+      const { createApp, ref, onMounted } = Vue;
+
       const App = {
-        data() {
+        setup() {
+          const words = ["chubby", "fluffy", "adorable", "cute"];
+          const fox_adjective = ref(words[0]);
+          let index = 0;
+
+          const swapWord = () => {
+            index = (index + 1) % words.length;
+            fox_adjective.value = words[index]; 
+          };
+
+          onMounted(() => {
+            setInterval(swapWord, 300); // Swap word every 0.5 seconds
+          });
+
           return {
-            is_visible_npwilde: false,
+            fox_adjective, 
             activeNames: ["1"],
-            projects_active_names: ["1"], 
+            projects_active_names: ["1"],
             travelogue_active_names: ["1", "2"],
           };
         },
-        methods: {
-          OnDogsClicked() {
-            var c = document.getElementById("dog-definition-canvas");
-            var ctx = c.getContext("2d");
-            ctx.moveTo(0, 0);
-            ctx.lineTo(200, 100);
-            ctx.stroke();
-          },
-        },
+        methods: {},
       };
       const app = Vue.createApp(App);
-      app.use(ElementPlus, {
-
-      });
+      app.use(ElementPlus, {});
       app.mount("#element-ui-app");
     </script>
 

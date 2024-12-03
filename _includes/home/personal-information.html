@@ -1,25 +1,42 @@
-<el-row>
-  <h3
-    style="text-align: center; margin-top: 0px"
-    @click="is_visible_npwilde = !is_visible_npwilde"
-  >
-    Gao, Weihe (Nick)
+<el-row style="margin-bottom: 0%;">
+  <h3 style="display: inline; text-align: center; margin-top: 0px">
+    Gao, Weihe&nbsp;
   </h3>
-  <el-popover
-    v-model:visible="is_visible_npwilde"
-    placement="bottom"
-    title="N. P. Wilde"
-    width="300"
-    trigger="click"
-    content="Named after the chubby fox from Zootopia!"
-    hide-on-blur
-  >
-    <p>Named after the chubby fox from Zootopia!</p>
-    <el-image
-      v-if="is_visible_npwilde"
-      src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp"
-    ></el-image>
+  <el-popover placement="bottom" width="300" trigger="click" hide-on-blur>
+    <template #default>
+      <el-card shadow="never">
+        <h4>N. P. Wilde</h4>
+        <p>
+          Named after the
+            <span v-if="fox_adjective" v-html="fox_adjective" :key="fox_adjective" class="swap-word"
+              ></span
+            >
+          fox happily <br /> living in Zootopia with Hopper!
+        </p>
+        <el-image
+          src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp"
+        ></el-image>
+      </el-card>
+    </template>
+    <template #reference>
+      <h3
+        style="
+          display: inline;
+          text-align: center;
+          margin-top: 0px;
+          cursor: pointer;
+        "
+      >
+        ( Nick )
+      </h3>
+    </template>
   </el-popover>
+</el-row>
+<el-row style="margin-bottom: 0%;">
+  <span>Pronouns: <i>he / him / his</i></span>
+</el-row>
+<el-row>
+  <span>How to pronounce: <i>way-heh</i> </span>
 </el-row>
 
 <el-collapse v-model="activeNames">
