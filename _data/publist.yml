@@ -29,7 +29,7 @@
 - title: "DChain: Scaling Blockchains through Trust-Minimized Compute Delegation"
   image: dchain-1.png
   description: DChain is a blockchain that enhances scalability and lightweight client participation using Trust-Minimized Compute Delegation (TMCD). TMCD leverages threshold cryptography to reduce resource demands while offloading computations to untrusted servers, maintaining decentralization and security. 
-  authors: "**Weihe Gao**, Yingdi Shan, Zhuotao Liu, Georgios Loukas, Sadiq Abubakar Sadi, Jiaxing Song"
+  authors: "**Weihe Gao**, Yingdi Shan, Zhuotao Liu, Georgios Loukas, Sadiq Abubakar Sani, Jiaxing Song"
   link:
     url: ../downloads/dchain.pdf
     display: Access
