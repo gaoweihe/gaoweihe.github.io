@@ -1,36 +1,109 @@
-- title: "A Device for Personnel Detection in an Intelligent Home Privacy Space"
+- title: "Trustable Data Analytical Cluster Scheduling Method based on Trusted Execution Environments"
+  number: "CN117931394A"
+  date: "2024-04-26"
+  image: taskgraph-1.png
+  description: A scheduling approach leveraging trusted hardware ensuring data privacy and integrity while enabling parallel execution across nodes, secure inter-node communication, optimized resource allocation, and improved computational efficiency.
+  authors: "**Weihe Gao**, Xuepeng Fan, Zaiyang Tang, Chenmin Wang, Yulong Zeng, Jinbo Zhang"
+  link:
+    url: 
+    display: 
+  highlight: 1
+
+- title: "Bridge Bearing State Monitoring Device"
+  number: "CN 2022 2 0687509.8"
+  date: "2022-07-29"
   image: 
   description: 
-  authors: 
+  authors: "**Weihe Gao**, Jie Guo, Jiong Li, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
+  link:
+    url: 
+    display: 
+  highlight: 0
+
+- title: "A Bridge Bearing State Monitoring Device and Method"
+  number: "CN 2022 1 0312790.1"
+  date: "2022-05-20"
+  image: 
+  description: 
+  authors: "Jiong Li, **Weihe Gao**, Jie Guo, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
+  link:
+    url: 
+    display: 
+  highlight: 0
+
+- title: "Bridge Bearing Data Acquisition Device"
+  number: "CN 2021 3 0879061.0"
+  date: "2022-05-05"
+  image: 
+  description: 
+  authors: "Yijia Jiang, Bingyi Hu, **Weihe Gao**, Qiwen Zhang, Jiong Li, Ruixiang Xu, Jingjia Yin, Xiaoming Li"
+  link:
+    url: 
+    display: 
+  highlight: 0
+
+- title: "Bridge Bearing Inclination and Vibration Testing Instrument"
+  number: "CN 2020 3 0653807.1"
+  date: "2021-08-27"
+  image: 
+  description: 
+  authors: "Ziqi Gao, Changqing Xu, **Weihe Gao**, Jiong Li"
+  link:
+    url: 
+    display: 
+  highlight: 0
+
+- title: "A Device for Personnel Detection in an Intelligent Home Privacy Space"
+  number: "CN 2020 2 0798927.5"
+  date: "2020-11-13"
+  image: 
+  description: 
+  authors: "Xiaoyue Li, Chen Dong, **Weihe Gao**, Ke Xing, Bingyi Hu"
   link:
     url: 
     display: 
   highlight: 0
 
 - title: "Signal Acquisition and Output Circuit and Device"
+  number: "CN 2019 2 1598628.0"
+  date: "2019-09-24"
   image: 
   description: 
-  authors: 
+  authors: "Hainan Liu, Chen Dong, Xiaoyue Li, **Weihe Gao**, Zhaobo Zeng, Hengyong Li, Bingyi Hu"
   link:
     url: 
     display: 
   highlight: 0
 
 - title: "Communication Conversion Circuit and Conversion Device"
+  number: "CN 2019 2 1587430.2"
+  date: "2019-09-23"
   image: 
   description: 
-  authors: 
+  authors: "**Weihe Gao**, Yuhan Wang, Hengyong Li, Hainan Liu, Cai Feng, Bingyi Hu"
   link:
     url: 
     display: 
   highlight: 0
 
 - title: "An Image Analysis-Based Spot Position Detection Sensor"
+  number: "CN 2019 2 0427925.2"
+  date: "2019-04-01"
   image: 
   description: 
-  authors: 
+  authors: "Xiangyu Han, **Weihe Gao**, Chen Xie, Hainan Liu"
   link:
     url: 
     display: 
   highlight: 0
 
+- title: "Expandable Folding Seat for Sleeping Carriage Aisles"
+  number: "CN 2016 2 0794058.2"
+  date: "2016-12-21"
+  image: 
+  description: 
+  authors: "**Weihe Gao**"
+  link:
+    url: 
+    display: 
+  highlight: 0

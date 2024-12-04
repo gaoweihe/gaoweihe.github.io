@@ -4,9 +4,15 @@ topics:
   - title: Internet-Based Open Integrated Utility Tunnel Information Exchange and Decision Support System
     image: deflection-1.png
     description: UUT. 
+  - title: Geological Disaster Data Visualization and Dynamic Display of Disaster Formation Process
+    image: deflection-1.png
+    description: UUT. 
 - name: Industrial Internet-of-Things
   projects: 
-  - title: Research on Key Technologies and Application Systems of Internet Plus Micro-circulation Mode Sponge City
+  - title: Key Technologies and Application Systems of Internet Plus Micro-circulation Mode Sponge City
+    image: deflection-1.png
+    description: UUT. 
+  - title: Integrating Key Technologies of Green Prefabricated Steel Structural Buildings
     image: deflection-1.png
     description: UUT. 
 - name: Consensus and Protocols
@@ -16,11 +22,17 @@ topics:
     description: UUT. 
 - name: Security and Privacy
   projects: 
-  - title: Secure RPC
+  - title: Secure RPC Framework for Secure Storage Systems
+    image: deflection-1.png
+    description: UUT. 
+  - title: Revertible Smart Contracts
     image: deflection-1.png
     description: UUT. 
 - name: Scheduling and Predictability
   projects: 
-  - title: Predictable LLM Serving API
+  - title: Scheduling and Predicting LLM Serving APIs
+    image: deflection-1.png
+    description: UUT. 
+  - title: OLAP Operations Scheduling within TEE Enrivonments
     image: deflection-1.png
     description: UUT. 
