@@ -2,7 +2,7 @@
 - title: "Image-based Deflection Measurement and Error Analysis"
   image: deflection-1.png
   description: A low-cost, image-based solution to measure bridge deflection using a laser transmitter and a camera-equipped optical screen. By applying image-processing algorithms, the method directly computes deflection while addressing systematic errors (such as lens geometric distortion).
-  authors: "Bingyi Hu, **Weihe Gao**, Cuiping Yan, Yongjun Ni, Chenqian Li"
+  authors: "Bingyi Hu, <b>Weihe Gao</b>, Cuiping Yan, Yongjun Ni, Chenqian Li"
   link:
     url: https://iopscience.iop.org/article/10.1088/1742-6596/1626/1/012024/meta
     display: Access
@@ -11,7 +11,7 @@
 - title: "Modelling and Implementation of Distributed Rain Water Storage and Utilization"
   image: water-1.jpg
   description: Modeling and simulating a distributed rain water storage system in order to mitigate urban waterlogging. The proposed model dynamically predicts waterlogging based on rainfall, dewatering rates, and storage capacity, providing early warnings and facility design recommendations. 
-  authors: "Bingyi Hu, Ke Xing, **Weihe Gao**, Hainan Liu, Hengyong Li"
+  authors: "Bingyi Hu, Ke Xing, <b>Weihe Gao</b>, Hainan Liu, Hengyong Li"
   link:
     url: https://iopscience.iop.org/article/10.1088/1742-6596/1624/2/022004/meta
     display: Access
@@ -20,7 +20,7 @@
 - title: "LogOnline: A Semi-Supervised Log-Based Anomaly Detector Aided with Online Learning Mechanism"
   image: dummy.jpg
   description: Log-based anomaly detection. 
-  authors: "Xuheng Wang, Jiaxing Song, Xu Zhang, Junshu Tang, **Weihe Gao**, Qingwei Lin"
+  authors: "Xuheng Wang, Jiaxing Song, Xu Zhang, Junshu Tang, <b>Weihe Gao</b>, Qingwei Lin"
   link:
     url: https://ieeexplore.ieee.org/abstract/document/10298477
     display: Access
@@ -29,7 +29,7 @@
 - title: "DChain: Scaling Blockchains through Trust-Minimized Compute Delegation"
   image: dchain-1.png
   description: DChain is a blockchain that enhances scalability and lightweight client participation using Trust-Minimized Compute Delegation (TMCD). TMCD leverages threshold cryptography to reduce resource demands while offloading computations to untrusted servers, maintaining decentralization and security. 
-  authors: "**Weihe Gao**, Yingdi Shan, Zhuotao Liu, Georgios Loukas, Sadiq Abubakar Sani, Jiaxing Song"
+  authors: "<b>Weihe Gao</b>, Yingdi Shan, Zhuotao Liu, Georgios Loukas, Sadiq Abubakar Sani, Jiaxing Song"
   link:
     url: ../downloads/dchain.pdf
     display: Access

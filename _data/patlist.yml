@@ -2,8 +2,8 @@
   number: "CN117931394A"
   date: "2024-04-26"
   image: taskgraph-1.png
-  description: A scheduling approach leveraging trusted hardware ensuring data privacy and integrity while enabling parallel execution across nodes, secure inter-node communication, optimized resource allocation, and improved computational efficiency.
-  authors: "**Weihe Gao**, Xuepeng Fan, Zaiyang Tang, Chenmin Wang, Yulong Zeng, Jinbo Zhang"
+  description: A scheduling approach leveraging trusted hardware (such as SGX and TDX), ensuring data privacy and integrity while enabling parallel execution across nodes, secure inter-node communication, optimized resource allocation, and improved computational efficiency.
+  authors: "<b>Weihe Gao</b>, Xuepeng Fan, Zaiyang Tang, Chenmin Wang, Yulong Zeng, Jinbo Zhang"
   link:
     url: 
     display: 
@@ -14,7 +14,7 @@
   date: "2022-07-29"
   image: 
   description: 
-  authors: "**Weihe Gao**, Jie Guo, Jiong Li, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
+  authors: "<b>Weihe Gao</b>, Jie Guo, Jiong Li, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
   link:
     url: 
     display: 
@@ -25,7 +25,7 @@
   date: "2022-05-20"
   image: 
   description: 
-  authors: "Jiong Li, **Weihe Gao**, Jie Guo, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
+  authors: "Jiong Li, <b>Weihe Gao</b>, Jie Guo, Bingyi Hu, Xiaoming Li, Ruixiang Xu, Jingjia Yin"
   link:
     url: 
     display: 
@@ -36,7 +36,7 @@
   date: "2022-05-05"
   image: 
   description: 
-  authors: "Yijia Jiang, Bingyi Hu, **Weihe Gao**, Qiwen Zhang, Jiong Li, Ruixiang Xu, Jingjia Yin, Xiaoming Li"
+  authors: "Yijia Jiang, Bingyi Hu, <b>Weihe Gao</b>, Qiwen Zhang, Jiong Li, Ruixiang Xu, Jingjia Yin, Xiaoming Li"
   link:
     url: 
     display: 
@@ -47,7 +47,7 @@
   date: "2021-08-27"
   image: 
   description: 
-  authors: "Ziqi Gao, Changqing Xu, **Weihe Gao**, Jiong Li"
+  authors: "Ziqi Gao, Changqing Xu, <b>Weihe Gao</b>, Jiong Li"
   link:
     url: 
     display: 
@@ -58,7 +58,7 @@
   date: "2020-11-13"
   image: 
   description: 
-  authors: "Xiaoyue Li, Chen Dong, **Weihe Gao**, Ke Xing, Bingyi Hu"
+  authors: "Xiaoyue Li, Chen Dong, <b>Weihe Gao</b>, Ke Xing, Bingyi Hu"
   link:
     url: 
     display: 
@@ -69,7 +69,7 @@
   date: "2019-09-24"
   image: 
   description: 
-  authors: "Hainan Liu, Chen Dong, Xiaoyue Li, **Weihe Gao**, Zhaobo Zeng, Hengyong Li, Bingyi Hu"
+  authors: "Hainan Liu, Chen Dong, Xiaoyue Li, <b>Weihe Gao</b>, Zhaobo Zeng, Hengyong Li, Bingyi Hu"
   link:
     url: 
     display: 
@@ -80,7 +80,7 @@
   date: "2019-09-23"
   image: 
   description: 
-  authors: "**Weihe Gao**, Yuhan Wang, Hengyong Li, Hainan Liu, Cai Feng, Bingyi Hu"
+  authors: "<b>Weihe Gao</b>, Yuhan Wang, Hengyong Li, Hainan Liu, Cai Feng, Bingyi Hu"
   link:
     url: 
     display: 
@@ -91,7 +91,7 @@
   date: "2019-04-01"
   image: 
   description: 
-  authors: "Xiangyu Han, **Weihe Gao**, Chen Xie, Hainan Liu"
+  authors: "Xiangyu Han, <b>Weihe Gao</b>, Chen Xie, Hainan Liu"
   link:
     url: 
     display: 
@@ -102,7 +102,7 @@
   date: "2016-12-21"
   image: 
   description: 
-  authors: "**Weihe Gao**"
+  authors: "<b>Weihe Gao</b>"
   link:
     url: 
     display: 

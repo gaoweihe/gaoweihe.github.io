@@ -6,9 +6,9 @@ sitemap: false
 permalink: /research/
 ---
 
-### Highlights
+<h3>Highlights</h3>
 
-Want to see more of my projects? Click <a href="/projects">here</a>! 
+<p>Want to see more of my projects? Click <a href="/projects">here</a>!</p>
 
 {% assign number_printed = 0 %}
 
@@ -76,27 +76,37 @@ Want to see more of my projects? Click <a href="/projects">here</a>!
 {% endif %}
 
 <hr>
-### Patents
+
+<h3>Patents</h3>
 
 {% assign number_printed = 0 %}
 {% for pat in site.data.patlist %}
 {% assign number_printed = number_printed | plus: 1 %}
 
-  [{{ number_printed }}] {{ pat.title }} ({{ pat.number }};{{ pat.date}})<br />
-  <em>{{ pat.authors }} </em><br /><a href="{{ pat.link.url }}">{{ pat.link.display }}</a>
+<div style="margin-bottom: 10px;">
+[{{ number_printed }}] {{ pat.title }} ({{ pat.number }};{{ pat.date}})<br />
+<em>{{ pat.authors }} </em>
+<br />
+<el-tag type="primary">Tag 1</el-tag>
+</div>
 
 {% endfor %}
 
 <hr>
-### Publications
+
+<h3>Publications</h3>
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
 {% assign number_printed = number_printed | plus: 1 %}
 
-<span style="display: inline;">[{{ number_printed }}]</span> <span style="display: inline;">{{ publi.title }}</span> {% if publi.under-review %}<span style="display: inline;">(<i>under review</i>)</span>{% endif %}
+<div style="margin-bottom: 10px;">
+<span style="display: inline;">[{{ number_printed }}]</span> <span style="display: inline;"><a href="{{ publi.link.url }}" target="_blank">{{ publi.title }}</a></span> {% if publi.under-review %}<span style="display: inline;">(<i>under review</i>)</span>{% endif %}
 <br />
-<em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
+<em>{{ publi.authors }}</em>
+<br />
+<el-tag type="primary">Tag 1</el-tag>
+</div>
 
 {% endfor %}
 
