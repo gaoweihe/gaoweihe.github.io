@@ -16,7 +16,7 @@ places:
     description: UUT. 
   - name: London
     images: 
-    - deflection-1.png
+    - london-1.jpg
     description: UUT. 
 - name: Iceland
   regions: 
@@ -32,3 +32,33 @@ places:
     images: 
     - deflection-1.png
     description: UUT. 
+- name: United States
+  regions: 
+  - name: Boston
+    images: 
+    - boston-1.jpg
+    description: UUT. 
+- name: Spain
+  regions: 
+  - name: Barcelona
+    images: 
+    - barcelona-1.jpg
+    description: UUT. 
+- name: South Korea
+  regions: 
+  - name: Incheon
+    images: 
+    - incheon-1.jpg
+    description: UUT. 
+- name: Qatar
+  regions: 
+  - name: Doha
+    images: 
+    - doha-1.jpg
+    description: UUT. 
+- name: China
+  regions: 
+  - name: Shanghai
+    images: 
+    - shanghai-1.jpg
+    description: UUT.     
