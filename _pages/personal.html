@@ -8,36 +8,35 @@ permalink: /personal/
 
 <h3>Nick's Secret Travelogue</h3>
 
-<p>I've always been a passionate adventurer and traveller. Throughout the past three years, I've explored the UK, Spain, Korea, Qatar, US, and many other countries.</p>
-<p>Want to see more of my adventures? I happen to have a <a href="https://horcrux.gaowh.click/mo/sharing/gXHtaQF0e" target="_blank">horcrux</a>!</p>
+<p>
+  I've always been a passionate adventurer and traveller. Throughout the past
+  three years, I've explored the UK, Spain, Korea, Qatar, US, and many other
+  countries.
+</p>
+<p>
+  Want to see more of my adventures? I happen to have a
+  <a href="https://horcrux.gaowh.click/mo/sharing/gXHtaQF0e" target="_blank"
+    >horcrux</a
+  >!
+</p>
 
 <el-collapse v-model="travelogue_active_names">
-  {% assign number_printed = 0 %}
-  {% for place in site.data.travelogue.places %}
+  {% assign number_printed = 0 %} {% for place in site.data.travelogue.places %}
   {% assign number_printed = number_printed | plus: 1 %}
   <el-collapse-item title="{{ place.name }}" name="{{ number_printed }}">
-  {% for region in place.regions %}
-  <div class="well">
-    <span class="proj-title-textbox">{{ region.name }}</span>
-    {% for url in region.images %}
-    <el-image v-if="travelogue_active_names.includes('{{ number_printed }}')" key="{{ url }}" src="{{ site.url }}{{ site.baseurl }}/images/travelogue/{{ url }}" lazy></el-image>
+    {% for region in place.regions %}
+    <div class="well">
+      <span class="proj-title-textbox">{{ region.name }}</span>
+      {% for url in region.images %}
+      <el-image
+        v-if="travelogue_active_names.includes('{{ number_printed }}')"
+        key="{{ url }}"
+        src="{{ site.url }}{{ site.baseurl }}/images/travelogue/{{ url }}"
+        lazy
+      ></el-image>
+      {% endfor %}
+    </div>
     {% endfor %}
-  </div>
-  {% endfor %}
   </el-collapse-item>
   {% endfor %}
 </el-collapse>
-
-<!-- <img
-        src="{{ site.url }}{{ site.baseurl }}/images/portrait-akureyri.jpg"
-        class="img-responsive"
-        width="100%"
-        style="
-          float: left;
-          margin-top: 20px;
-          margin-right: 20px;
-          margin-bottom: 20px;
-          margin-left: 0px;
-          box-shadow: 2px 2px 5px #888888;
-        "
-      /> -->

@@ -8,7 +8,7 @@ permalink: /research/
 
 ### Highlights
 
-Want to see more details of my past projects? Click <a href="/projects">here</a>! 
+Want to see more of my projects? Click <a href="/projects">here</a>! 
 
 {% assign number_printed = 0 %}
 
@@ -75,8 +75,6 @@ Want to see more details of my past projects? Click <a href="/projects">here</a>
 </div>
 {% endif %}
 
-<p> &nbsp; </p>
-
 <hr>
 ### Patents
 
@@ -101,3 +99,5 @@ Want to see more details of my past projects? Click <a href="/projects">here</a>
 <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
 {% endfor %}
+
+<hr>
