@@ -20,7 +20,7 @@ permalink: /personal/
   <div class="well">
     <span class="proj-title-textbox">{{ region.name }}</span>
     {% for url in region.images %}
-    <el-image key="{{ url }}" src="{{ site.url }}{{ site.baseurl }}/images/travelogue/{{ url }}" lazy></el-image>
+    <el-image v-if="travelogue_active_names.includes('{{ number_printed }}')" key="{{ url }}" src="{{ site.url }}{{ site.baseurl }}/images/travelogue/{{ url }}" lazy></el-image>
     {% endfor %}
   </div>
   {% endfor %}
