@@ -1,4 +1,4 @@
-<el-row style="margin-bottom: 0%;">
+<el-row style="margin-bottom: 0%">
   <h3 style="display: inline; text-align: center; margin-top: 0px">
     Gao, Weihe&nbsp;
   </h3>
@@ -8,10 +8,14 @@
         <h4>N. P. Wilde</h4>
         <p>
           Named after the
-            <span v-if="fox_adjective" v-html="fox_adjective" :key="fox_adjective" class="swap-word"
-              ></span
-            >
-          fox happily <br /> living in Zootopia with Hopper!
+          <span
+            v-if="fox_adjective"
+            v-html="fox_adjective"
+            :key="fox_adjective"
+            class="swap-word"
+          ></span>
+          fox happily <br />
+          living in Zootopia with Hopper!
         </p>
         <el-image
           src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp"
@@ -32,7 +36,7 @@
     </template>
   </el-popover>
 </el-row>
-<el-row style="margin-bottom: 0%;">
+<el-row style="margin-bottom: 0%">
   <span>Pronouns: <i>he / him / his</i></span>
 </el-row>
 <el-row>
@@ -45,15 +49,26 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="" target="_blank"
-            ><span class="fa-solid fa-location-dot fa-lg"></span
-          ></a>
+          <span class="fa-solid fa-location-dot fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
-        <a href="" target="_blank" class="side-icons side-icons-texts"
-          >Boston, MA</a
-        >
+        <el-popover placement="bottom" width="324" trigger="click" hide-on-blur>
+          <template #reference>
+            <span class="side-icons-texts">Boston, MA</span>
+          </template>
+          <template #default>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1239.8441824613442!2d-71.09255232305006!3d42.34544316624999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1733694214428!5m2!1sen!2sus"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </template>
+        </el-popover>
       </el-col>
     </el-row>
 
@@ -61,16 +76,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="mailto:nickwgao@gmail.com" target="_blank"
-            ><span class="fa-regular fa-envelope fa-lg"></span
-          ></a>
+          <span class="fa-regular fa-envelope fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="mailto:nickwgao@gmail.com"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >nickwgao@gmail.com</a
         >
       </el-col>
@@ -80,9 +93,7 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="" target="_blank"
-            ><span class="fa-regular fa-file fa-lg"></span
-          ></a>
+          <span class="fa-regular fa-file fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
@@ -126,9 +137,7 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="" target="_blank"
-            ><span class="fa-solid fa-key fa-lg"></span
-          ></a>
+          <span class="fa-solid fa-key fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
@@ -153,16 +162,18 @@
               ><el-link
                 type="primary"
                 style="font-size: 18px"
-                href=""
+                href="https://github.com/gaoweihe.gpg"
                 target="_blank"
                 >gpg</el-link
               ></el-card
             >
           </template>
           <template #reference>
-            <span style="cursor: pointer" class="side-icons side-icons-texts"
-              >SSH<el-divider direction="vertical"></el-divider>GPG</span
-            >
+            <div>
+              <span class="side-icons-texts">SSH</span>
+              <el-divider direction="vertical"></el-divider>
+              <span class="side-icons-texts">GPG</span>
+            </div>
           </template>
         </el-popover>
       </el-col>
@@ -173,16 +184,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="https://github.com/gaoweihe" target="_blank"
-            ><span class="fa-brands fa-github fa-lg"></span
-          ></a>
+          <span class="fa-brands fa-github fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="https://github.com/gaoweihe"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >@gaoweihe</a
         >
       </el-col>
@@ -192,18 +201,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a
-            href="https://www.linkedin.com/in/weihe-gao-600a1712b/"
-            target="_blank"
-            ><span class="fa-brands fa-linkedin-in fa-lg"></span
-          ></a>
+          <span class="fa-brands fa-linkedin-in fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="https://www.linkedin.com/in/weihe-gao-600a1712b/"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >@gaoweihe</a
         >
       </el-col>
@@ -214,16 +219,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="https://orcid.org/0000-0002-3881-7388" target="_blank"
-            ><span class="fa-brands fa-orcid fa-lg"></span
-          ></a>
+          <span class="fa-brands fa-orcid fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="https://orcid.org/0000-0002-3881-7388"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >0000-0002-3881-7388</a
         >
       </el-col>
@@ -233,18 +236,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a
-            href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en"
-            target="_blank"
-            ><span class="fa-brands fa-google-scholar fa-lg"></span
-          ></a>
+          <span class="fa-brands fa-google-scholar fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >WryZ9ywAAAAJ</a
         >
       </el-col>
@@ -254,16 +253,14 @@
       <el-col :span="1"></el-col>
       <el-col :span="5">
         <div style="text-align: center">
-          <a href="https://x.com/nickwgao" target="_blank"
-            ><span class="fa-brands fa-x-twitter fa-lg"></span
-          ></a>
+          <span class="fa-brands fa-x-twitter fa-lg"></span>
         </div>
       </el-col>
       <el-col :span="16">
         <a
           href="https://x.com/nickwgao"
           target="_blank"
-          class="side-icons side-icons-texts"
+          class="side-icons-texts"
           >@nickwgao</a
         >
       </el-col>
