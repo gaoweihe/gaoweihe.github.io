@@ -55,7 +55,7 @@
       <el-col :span="16">
         <el-popover placement="bottom" width="324" trigger="click" hide-on-blur>
           <template #reference>
-            <span class="side-icons-texts">Boston, MA</span>
+            <el-link :underline="false">Boston, MA</el-link>
           </template>
           <template #default>
             <iframe
@@ -80,11 +80,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="mailto:nickwgao@gmail.com"
           target="_blank"
-          class="side-icons-texts"
-          >nickwgao@gmail.com</a
+          >nickwgao@gmail.com</el-link
         >
       </el-col>
     </el-row>
@@ -97,39 +97,12 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <el-popover
-          placement="right"
-          title="Click down below for my CV"
-          width="300"
-          trigger="click"
-          content=""
+        <el-link
+          href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
+          target="_blank"
+          :underline="false"
+          >Curriculum Vitae</el-link
         >
-          <template #default>
-            <el-card class="box-card">
-              <el-link
-                type="primary"
-                style="font-size: 18px"
-                href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_en-uk.pdf"
-                target="_blank"
-                >en-uk</el-link
-              ></el-card
-            >
-            <el-card class="box-card"
-              ><el-link
-                type="primary"
-                style="font-size: 18px"
-                href="{{ site.url }}{{ site.baseurl }}/downloads/gaoweihe_cv_zh-cn.pdf"
-                target="_blank"
-                >zh-cn</el-link
-              ></el-card
-            >
-          </template>
-          <template #reference>
-            <span style="cursor: pointer" class="side-icons side-icons-texts"
-              >Curriculum Vitae</span
-            >
-          </template>
-        </el-popover>
       </el-col>
     </el-row>
 
@@ -141,41 +114,19 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <el-popover
-          placement="right"
-          title="Click down below for my public keys"
-          width="300"
-          trigger="click"
-          content=""
+        <el-link
+          href="https://github.com/gaoweihe.keys"
+          target="_blank"
+          :underline="false"
+          >SSH</el-link
         >
-          <template #default>
-            <el-card class="box-card">
-              <el-link
-                type="primary"
-                style="font-size: 18px"
-                href="https://github.com/gaoweihe.keys"
-                target="_blank"
-                >ssh-ed25519</el-link
-              ></el-card
-            >
-            <el-card class="box-card"
-              ><el-link
-                type="primary"
-                style="font-size: 18px"
-                href="https://github.com/gaoweihe.gpg"
-                target="_blank"
-                >gpg</el-link
-              ></el-card
-            >
-          </template>
-          <template #reference>
-            <div>
-              <span class="side-icons-texts">SSH</span>
-              <el-divider direction="vertical"></el-divider>
-              <span class="side-icons-texts">GPG</span>
-            </div>
-          </template>
-        </el-popover>
+        <el-divider direction="vertical"></el-divider>
+        <el-link
+          href="https://github.com/gaoweihe.gpg"
+          target="_blank"
+          :underline="false"
+          >GPG</el-link
+        >
       </el-col>
     </el-row>
   </el-collapse-item>
@@ -188,11 +139,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="https://github.com/gaoweihe"
           target="_blank"
-          class="side-icons-texts"
-          >@gaoweihe</a
+          >@gaoweihe</el-link
         >
       </el-col>
     </el-row>
@@ -205,11 +156,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="https://www.linkedin.com/in/weihe-gao-600a1712b/"
           target="_blank"
-          class="side-icons-texts"
-          >@gaoweihe</a
+          >@gaoweihe</el-link
         >
       </el-col>
     </el-row>
@@ -223,11 +174,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="https://orcid.org/0000-0002-3881-7388"
           target="_blank"
-          class="side-icons-texts"
-          >0000-0002-3881-7388</a
+          >0000-0002-3881-7388</el-link
         >
       </el-col>
     </el-row>
@@ -240,11 +191,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="https://scholar.google.com/citations?user=WryZ9ywAAAAJ&hl=en"
           target="_blank"
-          class="side-icons-texts"
-          >WryZ9ywAAAAJ</a
+          >WryZ9ywAAAAJ</el-link
         >
       </el-col>
     </el-row>
@@ -257,11 +208,11 @@
         </div>
       </el-col>
       <el-col :span="16">
-        <a
+        <el-link
+          :underline="false"
           href="https://x.com/nickwgao"
           target="_blank"
-          class="side-icons-texts"
-          >@nickwgao</a
+          >@nickwgao</el-link
         >
       </el-col>
     </el-row>
