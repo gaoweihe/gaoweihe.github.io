@@ -2,7 +2,7 @@ const { createApp, ref, onMounted } = Vue;
 
 const App = {
     setup() {
-        const words = ["chubby", "fluffy", "adorable", "cute"];
+        const words = ["chubby", "fluffy", "plumpy", "bouncy", "plushy"];
         const fox_adjective = ref(words[0]);
         let index = 0;
 
@@ -12,7 +12,7 @@ const App = {
         };
 
         onMounted(() => {
-        setInterval(swapWord, 300); // Swap word every 0.5 seconds
+        setInterval(swapWord, 300); // Swap word every 0.3 seconds
         });
 
         return {
