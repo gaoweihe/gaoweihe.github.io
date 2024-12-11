@@ -7,8 +7,8 @@ const App = {
         let index = 0;
 
         const swapWord = () => {
-        index = (index + 1) % words.length;
-        fox_adjective.value = words[index]; 
+            index = (index + 1) % words.length;
+            fox_adjective.value = words[index]; 
         };
 
         const research_topics = {
