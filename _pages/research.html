@@ -80,22 +80,26 @@ permalink: /research/
 <h3>Patents</h3>
 
 {% assign number_printed = 0 %}
-{% for pat in site.data.patents %}
+{% for patent in site.data.patents %}
 {% assign number_printed = number_printed | plus: 1 %}
 
 <div style="margin-bottom: 10px;">
     <table>
         <tr>
             <td style="width: 4ch;">[{{ number_printed }}]</td>
-            <td><span>{{ pat.title }}</span>&nbsp;<span>({{ pat.number }};&nbsp;{{ pat.date}})</span></td>
+            <td><span>{{ patent.title }}</span>&nbsp;<span>({{ patent.number }};&nbsp;{{ patent.date}})</span></td>
         </tr>
         <tr>
             <td></td>
-            <td><em>{{ pat.authors }}</em></td>
+            <td><em>{{ patent.authors }}</em></td>
         </tr>
         <tr>
             <td></td>
-            <td><el-tag type="primary">Tag 1</el-tag></td>
+            <td>                
+                {% for topic in patent.topics %}
+                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+                {% endfor %}
+            </td>
         </tr>
     </table>
 </div>
@@ -114,7 +118,12 @@ permalink: /research/
     <table>
         <tr>
             <td style="width: 4ch;">[{{ number_printed }}]</td>
-            <td><span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a></span> {% if paper.under-review %}<span style="display: inline;">(<i>under review</i>)</span>{% endif %}</td>
+            <td>
+                <span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>&nbsp;</span>
+                {% if paper.under-review %}
+                <span style="display: inline;">(<i>under review</i>)</span>
+                {% endif %}
+            </td>
         </tr>
         <tr>
             <td></td>
@@ -122,7 +131,11 @@ permalink: /research/
         </tr>
         <tr>
             <td></td>
-            <td><el-tag type="primary">Tag 1</el-tag></td>
+            <td>
+                {% for topic in paper.topics %}
+                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+                {% endfor %}
+            </td>
         </tr>
     </table>
 </div>

@@ -8,6 +8,9 @@
     url: 
     display: 
   highlight: 1
+  topics: 
+  - "TEE"
+  - "OLAP"
 
 - title: "Bridge Bearing State Monitoring Device"
   number: "CN 2022 2 0687509.8"
@@ -19,6 +22,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "CivilEng"
 
 - title: "A Bridge Bearing State Monitoring Device and Method"
   number: "CN 2022 1 0312790.1"
@@ -30,6 +36,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "CivilEng"
 
 - title: "Bridge Bearing Data Acquisition Device"
   number: "CN 2021 3 0879061.0"
@@ -41,6 +50,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "CivilEng"
 
 - title: "Bridge Bearing Inclination and Vibration Testing Instrument"
   number: "CN 2020 3 0653807.1"
@@ -52,6 +64,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "CivilEng"
 
 - title: "A Device for Personnel Detection in an Intelligent Home Privacy Space"
   number: "CN 2020 2 0798927.5"
@@ -63,6 +78,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "BME"
 
 - title: "Signal Acquisition and Output Circuit and Device"
   number: "CN 2019 2 1598628.0"
@@ -74,6 +92,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "SmartCities"
 
 - title: "Communication Conversion Circuit and Conversion Device"
   number: "CN 2019 2 1587430.2"
@@ -85,6 +106,9 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "SmartCities"
 
 - title: "An Image Analysis-Based Spot Position Detection Sensor"
   number: "CN 2019 2 0427925.2"
@@ -96,6 +120,10 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "IoT"
+  - "Img"
+  - "CivilEng"
 
 - title: "Expandable Folding Seat for Sleeping Carriage Aisles"
   number: "CN 2016 2 0794058.2"
@@ -107,3 +135,5 @@
     url: 
     display: 
   highlight: 0
+  topics: 
+  - "MechEng"

@@ -7,6 +7,9 @@
     url: https://iopscience.iop.org/article/10.1088/1742-6596/1626/1/012024/meta
     display: Access
   highlight: 1
+  topics: 
+  - "IoT"
+  - "Img"
 
 - title: "Modelling and Implementation of Distributed Rain Water Storage and Utilization"
   image: water-1.jpg
@@ -16,6 +19,8 @@
     url: https://iopscience.iop.org/article/10.1088/1742-6596/1624/2/022004/meta
     display: Access
   highlight: 1
+  topics: 
+  - "IoT"
 
 - title: "LogOnline: A Semi-Supervised Log-Based Anomaly Detector Aided with Online Learning Mechanism"
   image: dummy.jpg
@@ -25,6 +30,9 @@
     url: https://ieeexplore.ieee.org/abstract/document/10298477
     display: Access
   highlight: 0
+  topics:
+  - "ML/AI"
+  - "Logs"
 
 - title: "DChain: Scaling Blockchains through Trust-Minimized Compute Delegation"
   image: dchain-1.png
@@ -35,3 +43,6 @@
     display: Access
   under-review: 1
   highlight: 1
+  topics:
+  - "Sec"
+  - "Crypto"
