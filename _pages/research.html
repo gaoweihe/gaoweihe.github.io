@@ -13,10 +13,10 @@ permalink: /research/
 {% assign number_printed = 0 %}
 
 <!-- papers -->
-{% for publi in site.data.publist %}
+{% for publication in site.data.papers %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if publi.highlight == 1 %}
+{% if publication.highlight == 1 %}
 
 {% if even_odd == 0 %}
 <div class="row">
@@ -24,11 +24,11 @@ permalink: /research/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <span class="pub-title-textbox">{{ publi.title }}</span>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="100%" style="float: left" />
-  <p style="text-align: justify;">{{ publi.description }}</p>
-  <p><em>{{ publi.authors }}</em></p>
-  <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+  <span class="pub-title-textbox">{{ publication.title }}</span>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publication.image }}" class="img-responsive" width="100%" style="float: left" />
+  <p style="text-align: justify;">{{ publication.description }}</p>
+  <p><em>{{ publication.authors }}</em></p>
+  <p><strong><a href="{{ publi.link.url }}">{{ publication.link.display }}</a></strong></p>
  </div>
 </div>
 
@@ -42,10 +42,10 @@ permalink: /research/
 {% endfor %}
 
 <!-- patents -->
-{% for pat in site.data.patlist %}
+{% for patent in site.data.patents %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if pat.highlight == 1 %}
+{% if patent.highlight == 1 %}
 
 {% if even_odd == 0 %}
 <div class="row">
@@ -53,11 +53,11 @@ permalink: /research/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <span class="pub-title-textbox">{{ pat.title }}</span>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ pat.image }}" class="img-responsive" width="100%" style="float: left" />
-  <p style="text-align: justify;">{{ pat.description }}</p>
-  <p><em>{{ pat.authors }}</em></p>
-  <p><strong><a href="{{ publi.link.url }}">{{ pat.link.display }}</a></strong></p>
+  <span class="pub-title-textbox">{{ patent.title }}</span>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ patent.image }}" class="img-responsive" width="100%" style="float: left" />
+  <p style="text-align: justify;">{{ patent.description }}</p>
+  <p><em>{{ patent.authors }}</em></p>
+  <p><strong><a href="{{ publi.link.url }}">{{ patent.link.display }}</a></strong></p>
  </div>
 </div>
 
@@ -80,7 +80,7 @@ permalink: /research/
 <h3>Patents</h3>
 
 {% assign number_printed = 0 %}
-{% for pat in site.data.patlist %}
+{% for pat in site.data.patents %}
 {% assign number_printed = number_printed | plus: 1 %}
 
 <div style="margin-bottom: 10px;">
@@ -97,7 +97,7 @@ permalink: /research/
 <h3>Publications</h3>
 
 {% assign number_printed = 0 %}
-{% for publi in site.data.publist %}
+{% for publi in site.data.papers %}
 {% assign number_printed = number_printed | plus: 1 %}
 
 <div style="margin-bottom: 10px;">
