@@ -84,10 +84,20 @@ permalink: /research/
 {% assign number_printed = number_printed | plus: 1 %}
 
 <div style="margin-bottom: 10px;">
-[{{ number_printed }}] {{ pat.title }} ({{ pat.number }};{{ pat.date}})<br />
-<em>{{ pat.authors }} </em>
-<br />
-<el-tag type="primary">Tag 1</el-tag>
+    <table>
+        <tr>
+            <td style="width: 4ch;">[{{ number_printed }}]</td>
+            <td><span>{{ pat.title }}</span>&nbsp;<span>({{ pat.number }};&nbsp;{{ pat.date}})</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><em>{{ pat.authors }}</em></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><el-tag type="primary">Tag 1</el-tag></td>
+        </tr>
+    </table>
 </div>
 
 {% endfor %}
@@ -97,15 +107,24 @@ permalink: /research/
 <h3>Publications</h3>
 
 {% assign number_printed = 0 %}
-{% for publi in site.data.papers %}
+{% for paper in site.data.papers %}
 {% assign number_printed = number_printed | plus: 1 %}
 
 <div style="margin-bottom: 10px;">
-<span style="display: inline;">[{{ number_printed }}]</span> <span style="display: inline;"><a href="{{ publi.link.url }}" target="_blank">{{ publi.title }}</a></span> {% if publi.under-review %}<span style="display: inline;">(<i>under review</i>)</span>{% endif %}
-<br />
-<em>{{ publi.authors }}</em>
-<br />
-<el-tag type="primary">Tag 1</el-tag>
+    <table>
+        <tr>
+            <td style="width: 4ch;">[{{ number_printed }}]</td>
+            <td><span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a></span> {% if paper.under-review %}<span style="display: inline;">(<i>under review</i>)</span>{% endif %}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><em>{{ paper.authors }}</em></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><el-tag type="primary">Tag 1</el-tag></td>
+        </tr>
+    </table>
 </div>
 
 {% endfor %}
