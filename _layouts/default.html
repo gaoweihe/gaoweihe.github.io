@@ -17,10 +17,13 @@
 
     {% include header.html %}
 
-    <div id="element-ui-app">
+    <div id="element-ui-app" style="visibility: var(--hidden-before-vue)">
+      <div v-loading.fullscreen.lock="!is_loaded"></div>
       <el-backtop></el-backtop>
-      <div class="container-fluid" style="margin-bottom: 100px;">{{ content }}</div>
-    {% include footer.html %}
+      <div class="container-fluid" style="margin-bottom: 100px">
+        {{ content }}
+      </div>
+      {% include footer.html %}
     </div>
 
     <!-- element-ui-app -->

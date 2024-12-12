@@ -212,3 +212,7 @@ p.byline {
 	color: var(--el-color-warning);
 	font-family: 'Courier New', Courier, monospace;
 }
+
+:root {
+	--hidden-before-vue: hidden;
+}
