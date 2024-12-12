@@ -48,10 +48,8 @@ const App = {
           "--hidden-before-vue",
           "visible"
         );
-      }, 200);
-      setTimeout(() => {
         is_loaded.value = true;
-      }, 400);
+      }, 200);
     });
 
     return {
