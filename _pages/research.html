@@ -13,10 +13,10 @@ permalink: /research/
 {% assign number_printed = 0 %}
 
 <!-- papers -->
-{% for publication in site.data.papers %}
+{% for paper in site.data.papers %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
-{% if publication.highlight == 1 %}
+{% if paper.highlight == 1 %}
 
 {% if even_odd == 0 %}
 <div class="row">
@@ -24,11 +24,16 @@ permalink: /research/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <span class="pub-title-textbox">{{ publication.title }}</span>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publication.image }}" class="img-responsive" width="100%" style="float: left" />
-  <p style="text-align: justify;">{{ publication.description }}</p>
-  <p><em>{{ publication.authors }}</em></p>
-  <p><strong><a href="{{ publi.link.url }}">{{ publication.link.display }}</a></strong></p>
+  <a class="pub-title-textbox" href="./#{{ paper.title }}" target="_self">{{ paper.title }}</a>
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ paper.image }}" class="img-responsive" width="100%" style="float: left" />
+  <div style="margin-bottom: 10px;">
+  {% for topic in paper.topics %}
+    <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+  {% endfor %}
+  </div>
+  <p style="text-align: justify;">{{ paper.description }}</p>
+  <!-- <p><em>{{ paper.authors }}</em></p> -->
+  <p><strong><a href="{{ paper.link.url }}">{{ paper.link.display }}</a></strong></p>
  </div>
 </div>
 
@@ -53,10 +58,15 @@ permalink: /research/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <span class="pub-title-textbox">{{ patent.title }}</span>
+    <a class="pub-title-textbox" href="./#{{ patent.title }}" target="_self">{{ patent.title }}</a>
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ patent.image }}" class="img-responsive" width="100%" style="float: left" />
+  <div style="margin-bottom: 10px;">
+  {% for topic in patent.topics %}
+    <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+  {% endfor %}
+  </div>
   <p style="text-align: justify;">{{ patent.description }}</p>
-  <p><em>{{ patent.authors }}</em></p>
+  <!-- <p><em>{{ patent.authors }}</em></p> -->
   <p><strong><a href="{{ publi.link.url }}">{{ patent.link.display }}</a></strong></p>
  </div>
 </div>
@@ -85,9 +95,9 @@ permalink: /research/
 
 <div style="margin-bottom: 10px;">
     <table>
-        <tr>
+        <tr id="{{ patent.title }}">
             <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
-            <td><span>{{ patent.title }}</span>&nbsp;<span>({{ patent.number }};&nbsp;{{ patent.date}})</span></td>
+            <td><span>{{ patent.title }}</span>&nbsp;<span>({{ patent.number }};&nbsp;{{ patent.date }})</span></td>
         </tr>
         <tr>
             <td></td>
@@ -116,7 +126,7 @@ permalink: /research/
 
 <div style="margin-bottom: 10px;">
     <table>
-        <tr>
+        <tr id="{{ paper.title }}">
             <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
             <td>
                 <span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>&nbsp;</span>
