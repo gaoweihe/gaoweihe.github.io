@@ -6,80 +6,26 @@ sitemap: false
 permalink: /research/
 ---
 
+{% raw %}
+
 <h3>Highlights</h3>
 
 <p>Want to see more of my projects? Click <a href="/projects">here</a>!</p>
 
-{% assign number_printed = 0 %}
-
-<!-- papers -->
-{% for paper in site.data.papers %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if paper.highlight == 1 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
- <div class="well">
-  <a class="pub-title-textbox" href="./#{{ paper.title }}" target="_self">{{ paper.title }}</a>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ paper.image }}" class="img-responsive" width="100%" style="float: left" />
-  <div style="margin-bottom: 10px;">
-  {% for topic in paper.topics %}
-    <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
-  {% endfor %}
-  </div>
-  <p style="text-align: justify;">{{ paper.description }}</p>
- </div>
+<div class="row" v-for="chunk in chunkResearchHighlights(2)">
+    <div class="col-sm-6" v-for="item in chunk">
+        <div class="well">
+            <a class="pub-title-textbox" href="'./#' + item.title" target="_self">{{ item.title }}</a>
+            <img :src="jekyll_site.url + '/' + jekyll_site.baseurl + '/images/pubpic/' + item.image" class="img-responsive" width="100%" style="float: left" />
+            <div style="margin-bottom: 10px;">
+                <el-tag v-for="topic in item.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
+            </div>
+            <p style="text-align: justify;">{{ item.description }}</p>
+        </div>
+    </div>
 </div>
 
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endif %}
-{% endfor %}
-
-<!-- patents -->
-{% for patent in site.data.patents %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if patent.highlight == 1 %}
-
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
- <div class="well">
-    <a class="pub-title-textbox" href="./#{{ patent.title }}" target="_self">{{ patent.title }}</a>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ patent.image }}" class="img-responsive" width="100%" style="float: left" />
-  <div style="margin-bottom: 10px;">
-  {% for topic in patent.topics %}
-    <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
-  {% endfor %}
-  </div>
-  <p style="text-align: justify;">{{ patent.description }}</p>
- </div>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endif %}
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
+{% endraw %}
 
 <hr>
 
@@ -103,7 +49,7 @@ permalink: /research/
             <td></td>
             <td>                
                 {% for topic in patent.topics %}
-                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>
                 {% endfor %}
             </td>
         </tr>
@@ -139,7 +85,7 @@ permalink: /research/
             <td></td>
             <td>
                 {% for topic in paper.topics %}
-                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>&nbsp;
+                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>
                 {% endfor %}
             </td>
         </tr>

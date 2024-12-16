@@ -27,15 +27,40 @@ const App = {
       "SmartCities": "#F4A300",
     };
 
+    let jekyll_site = window.jekyllSite;
+
     const getResearchTopicTagStyle = (topic_name) => {
       color = research_topics[topic_name];
       border_color = color;
-      return `color: ${color}; border-color: ${border_color};`;
+      return `color: ${color}; border-color: ${border_color}; margin-right: 5px;`;
+    };
+
+    const chunkResearchHighlights = (chunk_size) => {
+      let highlights = [];
+      for (const paper of jekyll_site.data.papers) {
+        if (paper.highlight == 1) {
+          highlights.push(paper);
+        }
+      }
+      for (const patent of jekyll_site.data.patents) {
+        if (patent.highlight == 1) {
+          highlights.push(patent);
+        }
+      }
+
+      let highlights_chunked = [];
+      for (let i = 0; i < highlights.length; i += chunk_size) {
+        highlights_chunked.push(highlights.slice(i, i + chunk_size));
+      }
+
+      console.log(highlights_chunked);
+      return highlights_chunked;
     };
 
     const is_loaded = ref(false);
 
     onMounted(() => {
+      localStorage.setItem('message', 'Welcome!');
       setInterval(swapWord, 300); // Swap word every 0.3 seconds
       const tagElements = document.querySelectorAll(".topic-tag");
       tagElements.forEach((tag) => {
@@ -59,6 +84,8 @@ const App = {
       activeNames: ["1"],
       projects_active_names: ["1", "2", "3", "4", "5"],
       travelogue_active_names: [],
+      jekyll_site: jekyll_site, 
+      chunkResearchHighlights, 
     };
   },
 };
