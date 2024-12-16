@@ -15,7 +15,7 @@ permalink: /research/
 <div class="row" v-for="chunk in chunkResearchHighlights(2)">
     <div class="col-sm-6" v-for="item in chunk">
         <div class="well">
-            <a class="pub-title-textbox" href="'./#' + item.title" target="_self">{{ item.title }}</a>
+            <a class="pub-title-textbox" :href="'./#' + item.key" target="_self">{{ item.title }}</a>
             <img :src="jekyll_site.url + '/' + jekyll_site.baseurl + '/images/pubpic/' + item.image" class="img-responsive" width="100%" style="float: left" />
             <div style="margin-bottom: 10px;">
                 <el-tag v-for="topic in item.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
@@ -25,73 +25,55 @@ permalink: /research/
     </div>
 </div>
 
-{% endraw %}
-
-<hr>
+<el-divider></el-divider>
 
 <h3>Patents</h3>
 
-{% assign number_printed = 0 %}
-{% for patent in site.data.patents %}
-{% assign number_printed = number_printed | plus: 1 %}
-
 <div style="margin-bottom: 10px;">
-    <table>
-        <tr id="{{ patent.title }}" style="scroll-margin-top: 50px;">
-            <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
-            <td><span>{{ patent.title }}</span>&nbsp;<span>({{ patent.number }};&nbsp;{{ patent.date }})</span></td>
+    <table v-for="(item, index) in jekyll_site.data.patents" class="pub-list-grid">
+        <tr :id="item.key" style="scroll-margin-top: 50px;">
+            <td style="width: 4ch; vertical-align: top;">[{{ index + 1 }}]</td>
+            <td><span>{{ item.title }}</span>&nbsp;<span>({{ item.number }};&nbsp;{{ item.date }})</span></td>
         </tr>
         <tr>
             <td></td>
-            <td><em>{{ patent.authors }}</em></td>
+            <td><em v-html="item.authors"></em></td>
         </tr>
         <tr>
             <td></td>
-            <td>                
-                {% for topic in patent.topics %}
-                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>
-                {% endfor %}
+            <td>
+                <el-tag v-for="topic of item.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
             </td>
         </tr>
     </table>
 </div>
 
-{% endfor %}
-
-<hr>
+<el-divider></el-divider>
 
 <h3>Publications</h3>
 
-{% assign number_printed = 0 %}
-{% for paper in site.data.papers %}
-{% assign number_printed = number_printed | plus: 1 %}
-
 <div style="margin-bottom: 10px;">
-    <table>
-        <tr id="{{ paper.title }}" style="scroll-margin-top: 50px;">
-            <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
+    <table v-for="(item, index) in jekyll_site.data.papers" class="pub-list-grid">
+        <tr :id="item.key" style="scroll-margin-top: 50px;">
+            <td style="width: 4ch; vertical-align: top;">[{{ index + 1 }}]</td>
             <td>
-                <span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>&nbsp;</span>
-                {% if paper.under-review %}
-                <span style="display: inline;">(<i>under review</i>)</span>
-                {% endif %}
+                <span style="display: inline;"><a :href="item.link.url" target="_blank" style="text-decoration: none;">{{ item.title }}</a>&nbsp;</span>
+                <span v-if="item.under_review" style="display: inline;">(<i>under review</i>)</span>
             </td>
         </tr>
         <tr>
             <td></td>
-            <td><em>{{ paper.authors }}</em></td>
+            <td><em v-html="item.authors"></em></td>
         </tr>
         <tr>
             <td></td>
             <td>
-                {% for topic in paper.topics %}
-                <el-tag class="topic-tag" type="primary" effect="plain" topic="{{ topic }}">{{ topic }}</el-tag>
-                {% endfor %}
+                <el-tag v-for="topic of item.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
             </td>
         </tr>
     </table>
 </div>
 
-{% endfor %}
+<el-divider></el-divider>
 
-<hr>
+{% endraw %}

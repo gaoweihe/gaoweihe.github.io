@@ -27,8 +27,14 @@ const App = {
       "SmartCities": "#F4A300",
     };
 
-    let jekyll_site = window.jekyllSite;
-
+    let jekyll_site = window.jekyllSite; 
+    jekyll_site.data.papers.forEach((paper, index) => {
+      paper.key = 'paper-' + index;
+    });
+    jekyll_site.data.patents.forEach((patent, index) => {
+      patent.key = 'patent-' + index;
+    });
+    
     const getResearchTopicTagStyle = (topic_name) => {
       color = research_topics[topic_name];
       border_color = color;
@@ -53,7 +59,6 @@ const App = {
         highlights_chunked.push(highlights.slice(i, i + chunk_size));
       }
 
-      console.log(highlights_chunked);
       return highlights_chunked;
     };
 
@@ -61,13 +66,16 @@ const App = {
 
     onMounted(() => {
       localStorage.setItem('message', 'Welcome!');
+
       setInterval(swapWord, 300); // Swap word every 0.3 seconds
+
       const tagElements = document.querySelectorAll(".topic-tag");
       tagElements.forEach((tag) => {
         topic_name = tag.getAttribute("topic");
         tag_style = getResearchTopicTagStyle(topic_name);
         tag.setAttribute("style", tag_style);
       });
+
       setTimeout(() => {
         document.documentElement.style.setProperty(
           "--hidden-before-vue",
@@ -91,4 +99,4 @@ const App = {
 };
 const app = Vue.createApp(App);
 app.use(ElementPlus, {});
-app.mount("#element-ui-app");
+app.mount("#vue-app");

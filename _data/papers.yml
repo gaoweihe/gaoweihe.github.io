@@ -41,7 +41,7 @@
   link:
     url: ../downloads/dchain.pdf
     display: Access
-  under-review: 1
+  under_review: 1
   highlight: 1
   topics:
   - "Sec"
