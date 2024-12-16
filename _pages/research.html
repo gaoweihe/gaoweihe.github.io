@@ -16,7 +16,7 @@ permalink: /research/
     <div class="col-sm-6" v-for="item in chunk">
         <div class="well">
             <a class="pub-title-textbox" :href="'./#' + item.key" target="_self">{{ item.title }}</a>
-            <img :src="jekyll_site.url + '/' + jekyll_site.baseurl + '/images/pubpic/' + item.image" class="img-responsive" width="100%" style="float: left" />
+            <img :src="jekyll_site.url + jekyll_site.baseurl + '/images/pubpic/' + item.image" class="img-responsive" width="100%" style="float: left" />
             <div style="margin-bottom: 10px;">
                 <el-tag v-for="topic in item.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
             </div>
