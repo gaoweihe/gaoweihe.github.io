@@ -184,7 +184,8 @@ p.byline {
     height: 3em;             /* Fixed two-line height */
     text-align: center;      /* Optional: Align text in the center */
     box-sizing: border-box;  /* Includes padding in height calculations */
-	font-weight: bold;
+	font-weight: bold; 
+	color: inherit;
 }
 
 .proj-title-textbox {

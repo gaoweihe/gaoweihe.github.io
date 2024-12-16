@@ -32,8 +32,6 @@ permalink: /research/
   {% endfor %}
   </div>
   <p style="text-align: justify;">{{ paper.description }}</p>
-  <!-- <p><em>{{ paper.authors }}</em></p> -->
-  <p><strong><a href="{{ paper.link.url }}">{{ paper.link.display }}</a></strong></p>
  </div>
 </div>
 
@@ -66,8 +64,6 @@ permalink: /research/
   {% endfor %}
   </div>
   <p style="text-align: justify;">{{ patent.description }}</p>
-  <!-- <p><em>{{ patent.authors }}</em></p> -->
-  <p><strong><a href="{{ publi.link.url }}">{{ patent.link.display }}</a></strong></p>
  </div>
 </div>
 
@@ -95,7 +91,7 @@ permalink: /research/
 
 <div style="margin-bottom: 10px;">
     <table>
-        <tr id="{{ patent.title }}">
+        <tr id="{{ patent.title }}" style="scroll-margin-top: 50px;">
             <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
             <td><span>{{ patent.title }}</span>&nbsp;<span>({{ patent.number }};&nbsp;{{ patent.date }})</span></td>
         </tr>
@@ -126,7 +122,7 @@ permalink: /research/
 
 <div style="margin-bottom: 10px;">
     <table>
-        <tr id="{{ paper.title }}">
+        <tr id="{{ paper.title }}" style="scroll-margin-top: 50px;">
             <td style="width: 4ch; vertical-align: top;">[{{ number_printed }}]</td>
             <td>
                 <span style="display: inline;"><a href="{{ paper.link.url }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>&nbsp;</span>
