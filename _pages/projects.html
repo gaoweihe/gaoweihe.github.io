@@ -1,0 +1,22 @@
+---
+title: "Projects"
+layout: textlay
+excerpt: "Projects"
+sitemap: false
+permalink: /projects/
+---
+
+{% raw %}
+
+<h3>Projects</h3>
+
+<p>My research interests lie in anything around Computer Systems, where I've explored many sub-areas.</p>
+
+<el-collapse v-model="projects_active_names">
+    <el-collapse-item v-for="(topic, index) in jekyll_site.data.projects.topics" :title="topic.name" :name="String(index)">
+        <div v-for="project in topic.projects" class="well"><span class="proj-title-textbox">{{ project.title }}</span>
+        </div>
+    </el-collapse-item>
+</el-collapse>
+
+{% endraw %}
