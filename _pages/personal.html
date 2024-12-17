@@ -6,6 +6,8 @@ sitemap: false
 permalink: /personal/
 ---
 
+{% raw %}
+
 <h3>Nick's Secret Travelogue</h3>
 
 <p>
@@ -16,27 +18,23 @@ permalink: /personal/
 <p>
   Want to see more of my adventures? I happen to have a
   <a href="https://horcrux.gaowh.click/mo/sharing/gXHtaQF0e" target="_blank"
-    >horcrux</a
+    >Pensieve</a
   >!
 </p>
 
 <el-collapse v-model="travelogue_active_names">
-  {% assign number_printed = 0 %} {% for place in site.data.travelogue.places %}
-  {% assign number_printed = number_printed | plus: 1 %}
-  <el-collapse-item title="{{ place.name }}" name="{{ number_printed }}">
-    {% for region in place.regions %}
-    <div class="well">
+  <el-collapse-item v-for="(place, index) in jekyll_site.data.travelogue.places" :title="place.name" :name="index">
+    <div v-for="region in place.regions" class="well">
       <span class="proj-title-textbox">{{ region.name }}</span>
-      {% for url in region.images %}
       <el-image
-        v-if="travelogue_active_names.includes('{{ number_printed }}')"
-        key="{{ url }}"
-        src="{{ site.url }}{{ site.baseurl }}/images/travelogue/{{ url }}"
+        v-for="url in region.images"
+        v-if="travelogue_active_names.includes(index)"
+        :key="url"
+        :src="jekyll_site.url + jekyll_site.baseurl + '/images/travelogue/' + url"
         lazy
       ></el-image>
-      {% endfor %}
     </div>
-    {% endfor %}
   </el-collapse-item>
-  {% endfor %}
 </el-collapse>
+
+{% endraw %}
