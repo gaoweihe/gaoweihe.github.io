@@ -28,10 +28,8 @@ permalink: /personal/
       <span class="proj-title-textbox">{{ region.name }}</span>
       <el-image
         v-for="url in region.images"
-        v-if="travelogue_active_names.includes(index)"
         :key="url"
         :src="jekyll_site.url + jekyll_site.baseurl + '/images/travelogue/' + url"
-        lazy
       ></el-image>
     </div>
   </el-collapse-item>
