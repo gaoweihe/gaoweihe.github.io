@@ -22,7 +22,7 @@ permalink: /personal/
   >!
 </p>
 
-<el-collapse v-model="travelogue_active_names">
+<el-collapse v-model="travelogue_active_names" @change="handle_travelogue_an_change">
   <el-collapse-item v-for="(place, index) in jekyll_site.data.travelogue.places" :title="place.name" :name="String(index)">
     <div v-for="region in place.regions" class="well">
       <span class="proj-title-textbox">{{ region.name }}</span>

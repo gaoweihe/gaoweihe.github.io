@@ -12,9 +12,11 @@ permalink: /projects/
 
 <p>My research interests span over anything around <b>Computer Systems</b>, where I've explored many sub-areas.</p>
 
-<el-collapse v-model="projects_active_names">
-    <el-collapse-item v-for="(topic, index) in jekyll_site.data.projects.topics" :title="topic.name" :name="String(index)">
-        <div v-for="project in topic.projects" class="well"><span class="proj-title-textbox">{{ project.title }}</span>
+<el-collapse v-model="projects_active_names" @change="handle_projects_an_change">
+    <el-collapse-item v-for="(topic, index) in jekyll_site.data.projects.topics" :title="topic.name"
+        :name="String(index)">
+        <div v-for="project in topic.projects" class="well">
+            <span class="proj-title-textbox">{{ project.title }}</span>
         </div>
     </el-collapse-item>
 </el-collapse>

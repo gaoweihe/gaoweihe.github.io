@@ -1,7 +1,10 @@
+{% raw %}
+
 <el-row style="margin-bottom: 0%">
   <h3 style="display: inline; text-align: center; margin-top: 0px">
     Gao, Weihe&nbsp;
   </h3>
+
   <el-popover placement="bottom" width="300" trigger="click" hide-on-blur>
     <template #default>
       <el-card shadow="never">
@@ -18,7 +21,7 @@
           living in Zootopia with Hopper!
         </p>
         <el-image
-          src="{{ site.url }}{{ site.baseurl }}/images/npwilde.webp"
+          :src="jekyll_site.url + jekyll_site.baseurl + '/images/npwilde.webp'"
         ></el-image>
       </el-card>
     </template>
@@ -43,7 +46,7 @@
   <span>How to pronounce: <i>way-heh</i> </span>
 </el-row>
 
-<el-collapse v-model="activeNames">
+<el-collapse v-model="pi_active_names" @change="handle_pi_an_change">
   <el-collapse-item title="Basics" :name="String(0)"
     ><el-row type="flex" align="middle">
       <el-col :span="1"></el-col>
@@ -130,7 +133,7 @@
       </el-col>
     </el-row>
   </el-collapse-item>
-  <el-collapse-item title="Professional" name="2"
+  <el-collapse-item title="Professional" :name="String(1)"
     ><el-row type="flex" align="middle">
       <el-col :span="1"></el-col>
       <el-col :span="5">
@@ -165,7 +168,7 @@
       </el-col>
     </el-row>
   </el-collapse-item>
-  <el-collapse-item title="Academic" name="3"
+  <el-collapse-item title="Academic" :name="String(2)"
     ><el-row type="flex" align="middle">
       <el-col :span="1"></el-col>
       <el-col :span="5">
@@ -218,3 +221,5 @@
     </el-row>
   </el-collapse-item>
 </el-collapse>
+
+{% endraw %}

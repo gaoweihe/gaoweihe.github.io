@@ -27,21 +27,21 @@ const App = {
       "SmartCities": "#F4A300",
     };
 
-    let jekyll_site = window.jekyllSite; 
+    let jekyll_site = window.jekyllSite;
     jekyll_site.data.papers.forEach((paper, index) => {
       paper.key = 'paper-' + index;
     });
     jekyll_site.data.patents.forEach((patent, index) => {
       patent.key = 'patent-' + index;
     });
-    
+
     const getResearchTopicTagStyle = (topic_name) => {
       color = research_topics[topic_name];
       border_color = color;
       return `color: ${color}; border-color: ${border_color}; margin-right: 5px;`;
     };
 
-    const chunkResearchHighlights = (chunk_size) => {
+    const chunk_research_highlights = (chunk_size) => {
       let highlights = [];
       for (const paper of jekyll_site.data.papers) {
         if (paper.highlight == 1) {
@@ -60,6 +60,43 @@ const App = {
       }
 
       return highlights_chunked;
+    };
+
+    const seal_data = (key, value) => {
+      localStorage.setItem(key, value);
+    }
+
+    let pi_active_names = ref([]);
+    let travelogue_active_names = ref([]); 
+    let project_active_names = ref([]);
+    const restore_data = () => {
+      if (localStorage.getItem('pi_active_names') == null) {
+        seal_data('pi_active_names', JSON.stringify(["0"]));
+      }
+      pi_active_names = JSON.parse(localStorage.getItem('pi_active_names'));
+
+      if (localStorage.getItem('travelogue_active_names') == null) {
+        seal_data('travelogue_active_names', JSON.stringify([]));
+      }
+      travelogue_active_names = JSON.parse(localStorage.getItem('travelogue_active_names'));
+
+      if (localStorage.getItem('project_active_names') == null) {
+        seal_data('project_active_names', JSON.stringify(["0", "1", "2", "3", "4"]));
+      }
+      project_active_names = JSON.parse(localStorage.getItem('project_active_names'));
+    }
+    restore_data();
+
+    const handle_pi_an_change = (val) => {
+      seal_data('pi_active_names', JSON.stringify(val));
+    }; 
+
+    const handle_travelogue_an_change = (val) => {
+      seal_data('travelogue_active_names', JSON.stringify(val));
+    };
+
+    const handle_projects_an_change = (val) => {
+      seal_data('project_active_names', JSON.stringify(val));
     };
 
     const is_loaded = ref(false);
@@ -89,11 +126,15 @@ const App = {
       is_loaded: is_loaded,
       message: "Hello World!",
       fox_adjective,
-      activeNames: ["0"],
-      projects_active_names: ["0", "1", "2", "3", "4"],
-      travelogue_active_names: [],
-      jekyll_site: jekyll_site, 
-      chunkResearchHighlights, 
+      pi_active_names: pi_active_names,
+      projects_active_names: project_active_names,
+      travelogue_active_names: travelogue_active_names,
+      jekyll_site: jekyll_site,
+      chunk_research_highlights,
+      seal_data,
+      handle_pi_an_change, 
+      handle_travelogue_an_change, 
+      handle_projects_an_change, 
     };
   },
 };
