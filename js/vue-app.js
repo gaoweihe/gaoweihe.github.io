@@ -11,21 +11,7 @@ const App = {
       fox_adjective.value = words[index];
     };
 
-    const research_topics = {
-      "ML/AI": "#409EFF",
-      "Logs": "#67C23A",
-      "Sec": "#E6A23C",
-      "Crypto": "#F56C6C",
-      "IoT": "#13C2C2",
-      "Sched": "#F8D02A",
-      "Graphics": "#9C47E2",
-      "BME": "#FF8C44",
-      "TEE": "#1D9C99",
-      "OLAP": "#D4356C",
-      "CivilEng": "#1D9C99",
-      "MechEng": "#2F54EB",
-      "SmartCities": "#F4A300",
-    };
+    const research_topics = [];
 
     let jekyll_site = window.jekyllSite;
     jekyll_site.data.papers.forEach((paper, index) => {
@@ -35,9 +21,35 @@ const App = {
       patent.key = 'patent-' + index;
     });
 
+    const getResearchTopicTagColor = (topic_name) => {
+      if (research_topics.length == 0 || research_topics.at(0) == topic_name) {
+        research_topics.push(topic_name);
+        return 'hsl(0, 65%, 35%)';
+      }
+
+      const isTopicExist = research_topics.includes(topic_name);
+      if (!isTopicExist) {
+        research_topics.push(topic_name);
+      }
+
+      const topicIndex = research_topics.indexOf(topic_name); // starting from 0 
+      console.log(topicIndex, topic_name);
+
+      // Interpolate through binary subdivision
+      // dividend = 2 * ((n + 1) - 2 ^ {floor(log_2 ^ {n + 1})}) + 1
+      let dividend = 2 * ((topicIndex + 1) - Math.pow(2, Math.floor(Math.log2(topicIndex + 1)))) + 1;
+      // divisor = 2 ^ {log_2 ^ n + 1}
+      let divisor = Math.pow(2, Math.floor(Math.log2(topicIndex)) + 1);
+      let hue = dividend / divisor;
+      let color = `hsl(${hue * 360}, 65%, 35%)`;
+
+      return color;
+    };
+
     const getResearchTopicTagStyle = (topic_name) => {
-      color = research_topics[topic_name];
+      color = getResearchTopicTagColor(topic_name);
       border_color = color;
+
       return `color: ${color}; border-color: ${border_color}; margin-right: 5px;`;
     };
 
@@ -67,7 +79,7 @@ const App = {
     }
 
     let pi_active_names = ref([]);
-    let travelogue_active_names = ref([]); 
+    let travelogue_active_names = ref([]);
     let project_active_names = ref([]);
     const restore_data = () => {
       if (localStorage.getItem('pi_active_names') == null) {
@@ -89,7 +101,7 @@ const App = {
 
     const handle_pi_an_change = (val) => {
       seal_data('pi_active_names', JSON.stringify(val));
-    }; 
+    };
 
     const handle_travelogue_an_change = (val) => {
       seal_data('travelogue_active_names', JSON.stringify(val));
@@ -132,9 +144,9 @@ const App = {
       jekyll_site: jekyll_site,
       chunk_research_highlights,
       seal_data,
-      handle_pi_an_change, 
-      handle_travelogue_an_change, 
-      handle_projects_an_change, 
+      handle_pi_an_change,
+      handle_travelogue_an_change,
+      handle_projects_an_change,
     };
   },
 };
