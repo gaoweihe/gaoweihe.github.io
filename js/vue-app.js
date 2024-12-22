@@ -113,10 +113,56 @@ const App = {
 
     const is_loaded = ref(false);
 
+    const redraw_email_canvas = () => {
+      let canvas_class_name = "email_canvas";
+      Array.from(document.getElementsByClassName(canvas_class_name)).forEach(canvas => {
+        const context = canvas.getContext("2d");
+        const dpr = window.devicePixelRatio || 1;
+        const bsr = context.webkitBackingStorePixelRatio ||
+          context.mozBackingStorePixelRatio ||
+          context.msBackingStorePixelRatio ||
+          context.oBackingStorePixelRatio ||
+          context.backingStorePixelRatio || 1;
+        const pixel_ratio = dpr / bsr;
+
+        let original_width = 147.609;
+        let original_height = 28.297;
+        let scaled_width = original_width * pixel_ratio;
+        let scaled_height = original_height * pixel_ratio;
+
+        canvas.width = scaled_width;
+        canvas.height = scaled_height;
+        canvas.style.width = original_width + "px";
+        canvas.style.height = original_height + "px";
+
+        context.setTransform(pixel_ratio, 0, 0, pixel_ratio, 0, 0);
+        context.imageSmoothingEnabled = true;
+        context.imageSmoothingQuality = "high";
+
+        context.font = "16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif";
+        context.fillStyle = "rgb(85, 85, 85)";
+        context.textAlign = 'left';
+        context.textBaseline = 'middle';
+        const center_y = original_height / 2;
+
+        const user = "nickwgao";
+        const sld = "gmail";
+        const tld = "com";
+        context.fillText(`${user}\u0040${sld}\u002e${tld}`, 0, center_y);
+      })
+    };
+
     onMounted(() => {
       localStorage.setItem('message', 'Welcome!');
 
       setInterval(swapWord, 300); // Swap word every 0.3 seconds
+
+      // draw email canvas
+      window.addEventListener("resize", redraw_email_canvas);
+      window.matchMedia('(resolution: 1dppx)').addEventListener('change', redraw_email_canvas);
+      setTimeout(() => {
+        redraw_email_canvas();
+      }, 200);
 
       const tagElements = document.querySelectorAll(".topic-tag");
       tagElements.forEach((tag) => {
