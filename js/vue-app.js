@@ -111,8 +111,9 @@ const App = {
       seal_data('project_active_names', JSON.stringify(val));
     };
 
-    const is_loaded = ref(false);
+    let is_loaded = ref(false);
 
+    let is_email_canvas_hovered = false; 
     const redraw_email_canvas = () => {
       let canvas_class_name = "email_canvas";
       Array.from(document.getElementsByClassName(canvas_class_name)).forEach(canvas => {
@@ -136,7 +137,7 @@ const App = {
         context.imageSmoothingQuality = "high";
 
         context.font = "16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif";
-        context.fillStyle = "rgb(85, 85, 85)";
+        context.fillStyle = "rgb(85, 85, 85, 1)";
         context.textAlign = 'left';
         context.textBaseline = 'middle';
         const center_y = original_height / 2;
@@ -144,8 +145,15 @@ const App = {
         const user = "nickwgao";
         const sld = "gmail";
         const tld = "com";
-        context.fillText(`${user}\u0040${sld}\u002e${tld}`, 0, center_y);
-      })
+        const text = `${user}\u0040${sld}\u002e${tld}`;
+
+        if (is_email_canvas_hovered) {
+          const text_length = text.length;
+          context.fillText("_".repeat(text_length + 1), 0, center_y); 
+        }
+
+        context.fillText(text, 0, center_y); 
+      }); 
     };
 
     onMounted(() => {
@@ -159,6 +167,17 @@ const App = {
       setTimeout(() => {
         redraw_email_canvas();
       }, 200);
+      let canvas_class_name = "email_canvas";
+      Array.from(document.getElementsByClassName(canvas_class_name)).forEach(canvas => {
+        canvas.addEventListener('mouseover', function() {
+          is_email_canvas_hovered = true; 
+          redraw_email_canvas();
+        })
+        canvas.addEventListener('mouseout', function() {
+          is_email_canvas_hovered = false; 
+          redraw_email_canvas();
+        })
+      }); 
 
       const tagElements = document.querySelectorAll(".topic-tag");
       tagElements.forEach((tag) => {
