@@ -1,4 +1,5 @@
 const { createApp, ref, onMounted } = Vue;
+const { ElMessage } = ElementPlus;
 
 const App = {
   setup() {
@@ -111,6 +112,14 @@ const App = {
       seal_data('project_active_names', JSON.stringify(val));
     };
 
+    const handle_email_canvas_clicked = () => {
+      ElMessage({
+        message: 'Remove suffix to prove you are not a bot :-)',
+        type: 'warning',
+        duration: 5000
+      })
+    }; 
+
     let is_loaded = ref(false);
 
     let is_email_canvas_hovered = false; 
@@ -208,6 +217,7 @@ const App = {
       handle_pi_an_change,
       handle_travelogue_an_change,
       handle_projects_an_change,
+      handle_email_canvas_clicked, 
     };
   },
 };
