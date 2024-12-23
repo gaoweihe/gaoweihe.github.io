@@ -117,25 +117,21 @@ const App = {
       let canvas_class_name = "email_canvas";
       Array.from(document.getElementsByClassName(canvas_class_name)).forEach(canvas => {
         const context = canvas.getContext("2d");
-        const dpr = window.devicePixelRatio || 1;
-        const bsr = context.webkitBackingStorePixelRatio ||
-          context.mozBackingStorePixelRatio ||
-          context.msBackingStorePixelRatio ||
-          context.oBackingStorePixelRatio ||
-          context.backingStorePixelRatio || 1;
-        const pixel_ratio = dpr / bsr;
+        let ratio = window.devicePixelRatio; 
+        ratio = ratio * 2; 
 
         let original_width = 147.609;
         let original_height = 28.297;
-        let scaled_width = original_width * pixel_ratio;
-        let scaled_height = original_height * pixel_ratio;
+        let scaled_width = original_width * ratio;
+        let scaled_height = original_height * ratio;
 
         canvas.width = scaled_width;
         canvas.height = scaled_height;
         canvas.style.width = original_width + "px";
         canvas.style.height = original_height + "px";
 
-        context.setTransform(pixel_ratio, 0, 0, pixel_ratio, 0, 0);
+        context.scale(ratio, ratio); 
+
         context.imageSmoothingEnabled = true;
         context.imageSmoothingQuality = "high";
 
