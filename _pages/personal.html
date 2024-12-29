@@ -25,7 +25,8 @@ permalink: /personal/
 <el-collapse v-model="travelogue_active_names" @change="handle_travelogue_an_change">
   <el-collapse-item v-for="(place, index) in jekyll_site.data.travelogue.places" :title="place.name" :name="String(index)">
     <div v-for="region in place.regions" class="well">
-      <span class="proj-title-textbox">{{ region.name }}</span>
+      <span class="proj-title-textbox">{{ region.name }}</span><span>&nbsp;</span>
+      <span v-if="region.date">({{ region.date }})</span>
       <el-image
         v-for="url in region.images"
         :key="url"

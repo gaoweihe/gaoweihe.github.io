@@ -4,61 +4,47 @@ places:
   - name: Edinburgh
     images: 
     - edi-newyear.jpg
-    description: UUT. 
   - name: Guisborough
     images: 
     - barley.jpg
-    description: UUT. 
   - name: Milton Keynes
     images: 
     - max-1.jpg
     - max-2.jpg
-    description: UUT. 
   - name: London
     images: 
     - london-1.jpg
-    description: UUT. 
 - name: Iceland
   regions: 
   - name: Akureyri
+    date: 2024-07
     images: 
     - love-akureyri.jpg
-    description: UUT. 
   - name: Puffin Cliffs
     images: 
     - puffins.jpg
-    description: UUT. 
-  - name: Reykjavik
-    images: 
-    - deflection-1.png
-    description: UUT. 
 - name: United States
   regions: 
   - name: Boston
     images: 
     - boston-1.jpg
-    description: UUT. 
 - name: Spain
   regions: 
   - name: Barcelona
     images: 
     - barcelona-1.jpg
-    description: UUT. 
 - name: South Korea
   regions: 
   - name: Incheon
     images: 
     - incheon-1.jpg
-    description: UUT. 
 - name: Qatar
   regions: 
   - name: Doha
     images: 
     - doha-1.jpg
-    description: UUT. 
 - name: China
   regions: 
   - name: Shanghai
     images: 
     - shanghai-1.jpg
-    description: UUT.     

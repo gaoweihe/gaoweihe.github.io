@@ -17,6 +17,9 @@ permalink: /projects/
         :name="String(index)">
         <div v-for="project in topic.projects" class="well">
             <span class="proj-title-textbox">{{ project.title }}</span>
+            <div style="margin-bottom: 10px;">
+                <el-tag v-for="topic in project.topics" class="topic-tag" type="primary" effect="plain" :topic="topic">{{ topic }}</el-tag>
+            </div>
         </div>
     </el-collapse-item>
 </el-collapse>

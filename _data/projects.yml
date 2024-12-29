@@ -18,8 +18,11 @@ topics:
 - name: Consensus and Protocols
   projects: 
   - title: "DChain: Scaling Blockchains through Trust-Minimized Computing Delegation"
+    topics:
+    - "Sec"
+    - "Crypto"
     image: deflection-1.png
-    description: UUT. 
+    description: DChain is a blockchain that enhances scalability and lightweight client participation using Trust-Minimized Compute Delegation (TMCD). TMCD leverages threshold cryptography to reduce resource demands while offloading computations to untrusted servers, maintaining decentralization and security. 
 - name: Security and Privacy
   projects: 
   - title: Secure RPC Framework for Secure Storage Systems
