@@ -16,12 +16,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
-  <!-- Import style -->
-  <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
   <!-- Import Vue 3 -->
-  <script src="//unpkg.com/vue@3"></script>
+  {% if jekyll.environment == 'production' %}
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  {% else %}
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  {% endif %}
+
   <!-- Import component library -->
-  <script src="//unpkg.com/element-plus"></script>
+  {% if jekyll.environment == 'production' %}
+  <script src="https://unpkg.com/element-plus/dist/index.full.min.js"></script>
+  {% else %}
+  <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
+  {% endif %}
+  <!-- Import style -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
 
   <!-- Add Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/a0be153bdd.js" crossorigin="anonymous"></script>
