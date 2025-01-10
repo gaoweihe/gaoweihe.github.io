@@ -9,26 +9,24 @@
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-{% if jekyll.environment == 'production' %}
 {% include analytics.html %}
-{% endif %}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
   <!-- Import Vue 3 -->
-  {% if jekyll.environment == 'production' %}
+{% if jekyll.environment == 'production' %}
   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-  {% else %}
+{% else %}
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  {% endif %}
+{% endif %}
 
   <!-- Import component library -->
-  {% if jekyll.environment == 'production' %}
+{% if jekyll.environment == 'production' %}
   <script src="https://unpkg.com/element-plus/dist/index.full.min.js"></script>
-  {% else %}
+{% else %}
   <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
-  {% endif %}
+{% endif %}
   <!-- Import style -->
   <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
 
