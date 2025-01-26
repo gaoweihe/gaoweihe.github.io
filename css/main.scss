@@ -1,7 +1,13 @@
 --- 
 --- 
 
-@import "bootstrap";
+@import "bootstrap"; 
+
+$background-color: rgb(253, 253, 253); 
+
+:root {
+	--hidden-before-vue: hidden;
+}
 
 img {
 	margin-bottom: 24px;
@@ -12,7 +18,7 @@ img {
 
 body {
 	padding-top: 70px; 
-	background-color: rgb(253, 253, 253);
+	background-color: var(background-color);
 }
 
 figcaption {
@@ -208,7 +214,7 @@ p.byline {
 .el-collapse-item__content, 
 .el-link {
   color: inherit !important;
-  background-color: inherit !important; 
+  background-color: var(background-color) !important;
   font-size: inherit !important;
   font-family: inherit !important;
 }
@@ -216,8 +222,4 @@ p.byline {
 .swap-word {
 	color: var(--el-color-warning);
 	font-family: 'Courier New', Courier, monospace;
-}
-
-:root {
-	--hidden-before-vue: hidden;
 }
