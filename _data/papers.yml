@@ -13,7 +13,7 @@
 
 - title: "Modelling and Implementation of Distributed Rain Water Storage and Utilization"
   image: water-1.jpg
-  description: Modeling and simulating a distributed rain water storage system in order to mitigate urban waterlogging. The proposed model dynamically predicts waterlogging based on rainfall, dewatering rates, and storage capacity, providing early warnings and facility design recommendations. 
+  description: Modelling and simulating a distributed rain water storage system in order to mitigate urban waterlogging. The proposed model dynamically predicts waterlogging based on rainfall, dewatering rates, and storage capacity, providing early warnings and facility design recommendations. 
   authors: "Bingyi Hu, Ke Xing, <b>Weihe Gao</b>, Hainan Liu, Hengyong Li"
   link:
     url: https://iopscience.iop.org/article/10.1088/1742-6596/1624/2/022004/meta
