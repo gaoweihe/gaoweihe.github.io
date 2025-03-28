@@ -15,20 +15,12 @@
   <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
 
   <!-- Import Vue 3 -->
-{% if jekyll.environment == 'production' %}
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-{% else %}
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-{% endif %}
+  <script src="{{ '/js/vue@3/dist/vue.global.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
   <!-- Import component library -->
-{% if jekyll.environment == 'production' %}
-  <script src="https://unpkg.com/element-plus/dist/index.full.min.js"></script>
-{% else %}
-  <script src="https://unpkg.com/element-plus/dist/index.full.js"></script>
-{% endif %}
+  <script src="{{ '/js/element-plus/dist/index.full.js' | prepend: site.baseurl | prepend: site.url }}"></script>
   <!-- Import style -->
-  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
+  <link rel="stylesheet" href="{{ '/css/element-plus/dist/index.css' | prepend: site.baseurl | prepend: site.url }}" />
 
   <!-- Add Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/a0be153bdd.js" crossorigin="anonymous"></script>
