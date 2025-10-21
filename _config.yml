@@ -6,12 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Gao, Weihe
-email: gao.weihe@outlook.com
+title: Weihe Gao
+email: nickwgao+i.am.bot@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome to homepage of Gao, Weihe. 
+  Welcome to homepage of Weihe Gao. 
 baseurl: ""
 url: ""
+host: localhost
 
 include:
   - .htaccess
